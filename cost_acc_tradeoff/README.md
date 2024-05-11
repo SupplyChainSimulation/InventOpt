@@ -1,0 +1,3 @@
+## Cost versus Accuracy Tradeoff
+
+We estimate the computation cost of obtaining the simulation data with acceptable, reasonable errors. The Python script *'exe_time_rse_analysis.py'* estimates the reasonable computation cost for model __SupplyChainModelv2__ with *N* in *{100,200,400}* and *L* in *{100,200,300,400,500,600,700,800,900,1000}*. This script runs on a rack server to compute the computation time of estimating the performance measures at a single point in design space for different *N* (number of simulations) and *L* (length of simulation) value combinations. 
