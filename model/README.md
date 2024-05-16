@@ -1,4 +1,6 @@
-<center> <h1>Inventory optimization in Supply Chain </h1> </center> 
+<center> <h1>The Supply Chain Model</h1></center> 
+
+This notebook file demonstrates the code for modeling a supply chain network. It shows how to create supply chain nodes and connect them, assign parameter values and run the model to evaluate the supply chain's performance measures. It also shows validation steps to validate the model. A preliminary cost analysis of running the model is also presented here. Please navigate yourself to the <i>cost_accuracy_tradeoff</i> or <i>design_experiments</i> directory after creating a supply chain model. The <i>cost_accuracy_tradeoff</i> module estimates a reasonable computation cost of running the model and evaluating performance measures at a single point in the design space. The <i>design_experiments</i> module sets parameters for exhaustive evaluation (<b> L </b>: length of a simulation run, <b> N </b>: number of simulations) and evaluates the model at a given set of points (with input file in_param.csv). Following is an example supply chain network system, modelled with inventory parameters.
 
 ### System Description
 
@@ -78,8 +80,3 @@ Please refer to figure 1.2.
 |7|  S<sub>D2</sub> | max{ S<sub>R1</sub>, S<sub>R2</sub> } | 600 |Inventory capacity for D2|
 |8| s<sub>D2</sub> | max{ S<sub>R1</sub>, S<sub>R2</sub> } | S<sub>D2</sub> |Inventory threshold for D2|
 
-<big>
-
-This notebook file demonstrates the model code for the supply chain network described above. It shows how to create a network, assign parameter values and run the model to evaluate the system's performance measures. It shows the validation steps for the model. A preliminary cost analysis of running the model is also presented here. Please navigate yourself to the cost_accuracy_tradeoff or design_experiments directory. The cost_accuracy_tradeoff module estimates a reasonable computation cost of running the model and evaluating performance measures at a single point in the design space. The design_experiments module sets parameters for exhaustive evaluation (L: length of a simulation run, N: number of simulations) and evaluates the model at a given set of points (with input file in_param.csv)
-
-</big>
