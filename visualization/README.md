@@ -1,6 +1,6 @@
 # Design Exploration
 
-### Pre-requisites 
+### Prerequisites 
 
 You'll need to install [Streamlit](https://streamlit.io/) before you proceed to run the Python scripts in this directory.
 
