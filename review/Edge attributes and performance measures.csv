@@ -1,0 +1,21 @@
+Supply Chain Edge Attributes,,
+Sr,Attribute/Feature,Description
+1,Link distance,By road distance between two nodes
+2,Transportation Type,Road/Air
+3,Lead Time,Time to deliver the shipment from one node to another
+4,Product(s),List of products (SKUs) that are being transported
+5,Max load capacity,The maximum quantity that can be shipped
+6,Min shipment quantity,The minimum quantity required to start shipment
+7,Transportation cost,The cost to transport goods from one node in SC to another
+8,Prob of link failure/unavailability,"Probability of unavailability of this link due to natural disasters/road maintenance/road blocks due to rallies, etc"
+9,CO2 cost,Carbon emission cost
+10,Edge Reliability,Reliability of the edge (probability)
+11,Edge resilience,Resilience depends on the reliability of the edge and connected nodes
+12,Edge criticality,Refers to the importance of the edge
+,,
+,,
+Supply Chain Edge Performance Measures,,
+Sr,Performance Measure,Description
+1,Flow,Flow amount of number of products over a certain time period
+2,CO2 cost,Carbon emission cost
+3,Link utilization,Link utilization

@@ -1,0 +1,33 @@
+Supply Chain Node Attributes,,
+Sr,Attribute/Feature,Description
+1,Name,Name of the SC node
+2,ID,Unique ID (str+num)
+3,Type,Type of the SC node
+4,Location,Location on map
+5,Inventory,Does it have inventory to store goods?
+6,Inventory Type,Type of the inventory
+7,Inventory Replenishment Policy,The Replenishment Policy of the inventory
+8,Inventory Capacity,Inventory capacity level
+9,Inventory Reorder Level,Inventory bank level to avoid stockout
+10,Inventory Holding Cost(s),Inventory holding cost
+11,Inventory Reorder Period,Time period to reorder from the supplier
+12,Inventory Product(s),List of products that are stored in the inventory
+13,Order Cost,The cost of the order placed to the supplier to replenish the inventory
+14,Production Cost,Cost to produce some N number of items/products (node-specific attr)
+15,Establishment Cost,The cost of establishing this particular node (building and setting up the production plant or setting up the Warehouse)
+16,Depreciation Cost,"Decrease in product value over time due to wear, tear, or unfavorable market conditions"
+17,Production Level,The quantity of goods or services produced in a given time period
+18,Supply reliability,It depends on the number of demand nodes and supply nodes connected
+19,Node resilience,The resilience of the node depends on the reliability of its supply
+20,Node criticality,"Refers to the importance of the node (e.g., a node that could cut the main flow of product if they are down)"
+,,
+Supply Chain Node Performance Measures,,
+Sr,Performance Measure,Description
+1,Throughput,Number of goods sold per unit of time (day/month/quarter)
+2,Total sales/net sales,The total number of items sold over a given time period
+3,Average sales,Number of items sold per unit of time (day/month/quarter)
+4,Net profit,Net profit generated over a given time period (in the current month/quarter)
+5,Average net profit,Average net profit per time unit (day/month/quarter)
+6,Inventory levels,Intermediate inventory levels at given time intervals (daily/monthly)
+7,Total node cost,"Node cost (includes cost of manufacturing, storing, moving, loading, unloading, and transporting)"
+8,Average node cost,Average node cost per unit time
