@@ -1,4 +1,4 @@
-Supply Chain Node Attributes,,
+,Supply Chain Node Attributes,
 Sr,Attribute/Feature,Description
 1,Name,Name of the SC node
 2,ID,Unique ID (str+num)
@@ -21,7 +21,7 @@ Sr,Attribute/Feature,Description
 19,Node resilience,The resilience of the node depends on the reliability of its supply
 20,Node criticality,"Refers to the importance of the node (e.g., a node that could cut the main flow of product if they are down)"
 ,,
-Supply Chain Node Performance Measures,,
+,Supply Chain Node Performance Measures,
 Sr,Performance Measure,Description
 1,Throughput,Number of goods sold per unit of time (day/month/quarter)
 2,Total sales/net sales,The total number of items sold over a given time period
