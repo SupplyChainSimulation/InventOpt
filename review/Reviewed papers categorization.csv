@@ -1,0 +1,515 @@
+Sr,Supply chain problem,Application domain,Title,Specific aspect / SC aspect,Tools used to build the model,Simulation method used,Optimization/prediction method used,Comments,Any attributes
+1,Demand Forecasting,Other/Not mentioned,An Agent-based Simulation Model to Mitigate the Bullwhip Effect via Information Sharing and Risk Pooling,"Analysis: Bullwhip effect (ripple of rising demand towards supplier in chain)
+
+Authors model 3 echelon SC to study impact of info sharing and risk pooling",AnyLogic,ABS,Analysis: simulation-based,"The paper investigates strategies to mitigate the bullwhip effect in supply chains through an agent-based simulation model. It focuses on the impact of information sharing and risk pooling on reducing demand distortion across a three-echelon supply chain comprising a manufacturer, wholesaler, and two retailers","SC structure (2 retailers, a wholesaler, manufacturer)
+demand and order quantity
+inventory replenishment policy (order-up-to level, safety stock, moving average forecast)
+Lead time"
+2,Demand Forecasting,Other/Not mentioned,Simulation of stochastic rolling horizon forecast behavior with applied outlier correction to increase forecast accuracy,"Simulation-based optimization
+Authors model and simulate different ""outlier correction"" methods, evaluate their performance. This study shows applying these methods improves forecast accuracy",AnyLogic,DES,Simulation-based,"a supply chain involves two stages: customers providing demand forecasts to a manufacturer. Customers update these forecasts over time (rolling horizon basis).
+Forecast issues: stochastic errors (random variation in forecast), bias (overestimate or underestimate actual demand) - this causes instabilities in planning (ERP). These are outliers in demand forecasts.
+Authors propose simulation of outlier correction methods to prove their usability","forecast, forecast_horizon, random update term to introduce stochastic nature"
+3,Demand Forecasting,Other/Not mentioned,Forecast and production order accuracy for stochastic forecast updates with demand shifting and forecast bias correction,"Analysis
+impact of biased and unbiased forecast updates on accuracy
+
+- also introduces demand correction methods to mitigateeffect of biased forecasts",AnyLogic,DES,simulation based analysis,"The paper develops a demand model for suppliers based on observed customer forecasting behaviors, focusing on rolling horizon information updates. It examines the effects of unbiased and biased forecast updates, as well as demand shifting between periods, on forecast and production order accuracy. They evaluate the impact of these factors on forecast accuracy and introduces a correction method to mitigate the negative effects of biased forecasts. The findings are validated through simulation and real company data, providing insights into improving production planning in manufacturing systems",
+4,Demand Forecasting,Other/Not mentioned,Using simulation-based system dynamics and genetic algorithms to reduce the cash flow bullwhip in the supply chain,"Demand forecasting,
+Inventory, replenishment policies",MATLAB,SD,"simulation-based optimisation, SBO","Cash Flow Bullwhip (CFB) and the traditional inventory bullwhip effect (BWE), i.e., variability amplification in orders and in cash conversion cycles across stages. The paper aims to minimise CFB, BWE, and supply chain total cost (SCTC) by finding optimal control parameters.","Modeling parameters
+    desired inventory
+    desired supply line
+    sales price per unit)
+    unit cost
+    upstream sales price
+    demand smoothing parameter
+    orders placed
+    order quantity
+    inventory level
+    backlog
+    financial policy (pay policy, collection policy)
+
+Performance metrics (output)
+    Supply Chain Total Cost
+    Bullwhip Effect variance(orders)/variance(demand) 
+    Cash Conversion Cycle (CCC) (derived metric)
+    Cash Flow Bullwhip variance(CCC)/variance(demand)
+    Inventory levels and backlog levels
+    Order quantity trajectories and order variance"
+5,Demand Forecasting; Supply Chain Disruptions,Other/Not mentioned,"State of the art, conceptual framework and simulation analysis of the ripple effect on supply chains.",Supply chain disruptions,Python,ABS,Analysis,"The paper tackles the fragmented state of knowledge on the ripple effect: how disruptions spread through supply chains, which mitigation and recovery measures exist, and where empirical and methodological gaps remain.
+
+They performed a systematic literature review (50 selected documents) to classify research streams, methods, application areas and mitigation strategies.
+From the review they proposed a conceptual framework that links disruption drivers, resilience pillars (redundancy, robustness, flexibility), digital technologies, and proactive/reactive measures.
+They implemented and validated that framework with a System Dynamics simulation model (adapted from Gu and Gao) to quantify ripple propagation and to test how inventory cover time, recovery speed and mitigation policies affect service levels and profits.","Disruption attributes
+Operational parameters: lead times, processing times, transport capacity, safety stock/cover time, reorder policies.
+
+Service level; share of demand met; time-to-recover; time-to-survive; resilience indices (recovery speed and magnitude).
+Economic metrics: total cost, disruption cost, profit
+Topological/structural metrics: node connectivity, largest functional component, path lengths.
+Variability measures: order/inventory variance, bullwhip/ripple quantification"
+6,Energy and Carbon Cost Modeling and Optimization,Other/Not mentioned,Hybrid System modelling Approach for the Depiction of the Energy Consumption in Production Simulations,"energy efficiency analysis in production - 
+
+energy consumption in the context of planning and scheduling operations",AnyLogic,Hybrid DES + ABS + SD,not specified.,focuses mainly on the detection of possible energy consumption peaks in the system using simulations,No
+7,Inventory Analysis and Optimization,Agriculture and Food,An adaptive simulation-based inventory optimisation approach to enhancing biomass supply chain resilience: a case study of remote communities,"Inventory
+
+1. Multi-echelon inventory and replenishment (s, S), 
+2. Conversion and production processes (at bio-hubs (drying, grinding, pelletising, cooling) including machine failures and repair times.)
+3. Transportation constraints: trucks and ships with seasonal access windows and load capacities",AnyLogic,Hybrid DES + ABS + Monte Carlo,OptQuest,"Adaptive inventory planning and resilience in biomass supply chains facing stochastic feedstock quality, seasonal transport windows, equipment breakdowns, and capacity limits.
+
+Objective: minimise total system cost while improving reliability, biomass share in the energy mix, and reducing CO? emissions compared to diesel-only scenarios.","Key modeling parameters
+    Inventory policy variables: reorder point s and order-up-to level S per node.
+    Production/process parameters: dryer heat demand, pellet mill capacity, machine time-to-failure and repair distributions.
+    Feedstock quality: moisture content (Weibull) and heating value (Normal).
+    Transport parameters: truck/ship capacities, speeds, load/unload times, seasonal transport windows.
+    Cost parameters: storage costs (hub and community), transportation costs, electricity levelised costs for biomass and diesel, penalty for diesel use.
+
+Performance metrics and outputs
+    Electricity generation mix: total bioenergy (GW) vs diesel (GW); bioenergy share of supply.
+    Total system cost and unit cost of electricity ($/kWh).
+    CO? emissions from transportation and fuel combustion (kg CO?-eq).
+    Unmet demand (amount covered by diesel) and reliability/readiness indicators.
+    Inventory dynamics: on-hand and in-process inventory time series at hubs and communities.
+    Cost incurred: inventory, transportation, generation, and module-level cost."
+8,Inventory Analysis and Optimization,Agriculture and Food,A simulation-optimisation approach for production control strategies in perishable food supply chains,Inventory optimization,Arena,DES,,Food SC,
+9,Inventory Analysis and Optimization,Healthcare and Medical,Scenario-based Simulation Approach for an Integrated Inventory Blood Supply Chain System,Simulation model to support management (or to support critical decisions in the system),Arena,DES,simulation-based,"Authors simulate Blood supply chains (network of blood banks, blood collection centers, hospitals and logistics to transport blood from place to place) using DES in Arena. They support modeling of blood shelf life, cross matching, donation methods...
+They propose integrated inventory systems (IIS) (including vehicle depot to facilitate the flow of blood products) that connects blood banks and hospitals","Inventory policy: FIFO, 
+
+specific parameters: blood donation method, Blood product type (RCB,plasma, whole, platelets)..."
+10,Inventory Analysis and Optimization,Healthcare and Medical,BloodChainSim – a Simulation Environment to Evaluate Digital Innovations in Blood Supply Chains,Optimization of inventory (and logistics) to maximize availability (to minimize blood shortage),AnyLogic,Hybrid DES + ABS,Simulation-based,BloodChainSim is a toolkit developed on top of AnyLogic.,Not explicitly
+11,Inventory Analysis and Optimization,Healthcare and Medical,Improving Simulation Optimization Run Time When Solving for Periodic Review Inventory Policies in a Pharmacy,"inventory optimization (s,S) to minimize per day costs",Not specified,Other,Simulation-based,"simulation model accounts for perishability, positive lead time, stochastic demand, and supply disruptions. They propose Binary-Grid-Search algorithm to quickly search for optimum.","Inventory parameters (s,S), lead time, shelf life, 
+inventory shortage, waste, holding, ordering cost, 
+purchase cost"
+12,Inventory Analysis and Optimization,Healthcare and Medical,Effects of Timing of Agents' Reactions in Pharmaceutical Supply Chains under Disruption,Analysis: analysis of impact of disruptions on pharma supply chains using multiagent simulation,Not specified,ABS,Analysis: simulation-based,"Authors model pharma supply chains under disruptions (they model flow of product, inventory levels, trustworthiness, agent behavior). The study shows: communication can exacerbate disruption impact","Inventory parameters,
+Transportation parameters
+Performance Metrics: Trustworthiness measure, profit measure, backlog levels, inventory costs"
+13,Inventory Analysis and Optimization,Healthcare and Medical,Measuring the Impact of Data Standards in an Internal Hospital Supply System,"Analysis: simulation to illustrate the potential benefits of using data standards within a hospital supply system in terms of the improved management of items that can 
+expire.",Arena,DES,Simulation based analysis,"In hospital SC, using data standards proves to be useful (unique identifiers for resources and inventory). Authors illustrates its benefits by simulating hospital SC with data standards. They model inventory with SKU, and shelf life for inventory items","Inventory replenishment policies:
+(r,Q) reorder point, reorder quantity: when reorder point is reached, place order for Q quantity
+(T,S) periodic review period (T), Order up to level (S): review inventory periodically, and then order to fill up to level S
+other parameters:
+Inventory with shelf life, lead time, SKU"
+14,Inventory Analysis and Optimization,Healthcare and Medical,Conceptual Modeling for Perishable Inventory: A Case Study in Human Milk Banking,"Optimization of inventory management
+(stockouts minimization, costs minimization)",Not specified,DES,Optimization of inventory management,Authors model perishable inventory of milk banks (managed to satisfy the dietary needs of premature and vulnerable infants) to study and improve inventory management (improved resource allocation to avoid stockouts),"Batch Handling Process: batch splitting and handling (defrost, pasteurize, microbiological test, split into bottles etc).
+Donor Milk Supply and Demand: statistical model
+Operational Timings
+Discard Rate: Frequency of microbiological testing failures.
+Hospital Orders (rate)"
+15,Inventory Analysis and Optimization,Healthcare and Medical,Metamodel-assisted Sensitivity Analysis for Controlling the Impact of Input Uncertainty,"Sensitivity analysis 
+(analyse how change in input impacts the output)",Not specified,Other,Metamodel based analysis,"Some supply chains like pharma are often driven by multiple input models (input model estimation err), and stochastic simulation yields simulation estimation errors.
+Authors propose a method to analyse the impact of input uncertainty on supply chain response/performance.","Inventory management example is demonstrated.
+
+arrival rate, inv capacity,"
+16,Inventory Analysis and Optimization,Industrial and Manufacturing,Applying digital twins for inventory and cash management in supply chains under physical and financial disruptions,"Inventory
+Supply chain disruptions",SimPy,DES,Analysis,"Problem: The paper examines how simultaneous physical and financial disruptions propagate through a three-tier supply chain and how downstream payment policies can squeeze upstream liquidity, worsening resilience and operational performance.
+
+How it was addressed: The authors built a SimPy discrete-event digital twin of a three-echelon supply chain to run scenario experiments (payment increases, demand surges, capacity drops). They then trained a CART decision tree on simulation outputs (10,000+ generated examples) to produce interpretable decision rules that recommend inventory and cash replenishment settings to keep upstream CCC within acceptable bands. Results show payment policy shifts materially change CCC across tiers, inventory levels dominate CCC effects under physical shocks, and the decision-tree rules enable centralised planning to outperform decentralised policies in many scenarios.","Parameters
+Inventory policy parameters: desired inventory (DI), desired WIP inventory
+Financial policy parameters: credit purchase policy n and credit collection policy m
+Operational parameters: manufacturer capacity, customer demand, lead times
+
+Performance:
+Cash Conversion Cycle (CCC) per echelon
+Service level (retailer fill rate), inventory levels"
+17,Inventory Analysis and Optimization,Industrial and Manufacturing,Simulated-Based Analysis Of Recovery Actions Under Vendor-Managed Inventory Amid Black Swan Disruptions In The Semiconductor Industry: A Case Study From Infineon Technologies AG,Analysis: performance of Vendor Managed Inventories (VMI) during disruptions,AnyLogic,Hybrid DES + ABS,Analysis: simulation-based,"The paper presents a simulation-based analysis of recovery actions under vendor-managed inventory (VMI) amid black swan disruptions in the semiconductor industry. It explores the impact of the COVID-19 pandemic on supply chains, particularly focusing on the automotive sector semiconductor supply chain.
+
+Black Swan Disruptions refer to highly unpredictable and rare events that have severe consequences.","Demand, Lead time, 
+Inventory parameters (capacity, costs)
+Inventory levels (at retailer, warehouse, manufacturer, supplier)
+replenishment policy (R,s,S): R review period, s reorder point, S reorder level
+Production capacity,
+Disruption phase"
+18,Inventory Analysis and Optimization,Industrial and Manufacturing,Inventory policy for postponement strategy in the semiconductor industry with a die bank,Inventory optimization,Arena,DES,Simulation based,"discusses an inventory policy for the semiconductor industry, focusing on the use of a die bank (intermediate fabricated wafers known as dies) to improve inventory management and customer responsiveness. By storing intermediate forms of wafers, the die bank allows for postponement of product differentiation, reducing finished goods inventory and adapting more flexibly to demand changes.","demand, forecast, inventory level, inventory quantity, production lead time
+
+avg inv levels, service level, fill rate, cycle service time"
+19,Inventory Analysis and Optimization,Industrial and Manufacturing,The effects of pre or post delay variable changes in discrete event simulation and combined DES/system dynamics approaches in modelling supply chain performance,pre or post delay variable changes in DES,Arena,Hybrid DES + SD,,Cement supply chain,
+20,Inventory Analysis and Optimization,Industrial and Manufacturing,Dynamic inventory replenishment strategy for aerospace manufacturing supply chain: combining reinforcement learning and multi-agent simulation,"Inventory 
+
+(Production and assembly processes,
+Transportation and shipment batching, 
+Multi-echelon material and part flows)",AnyLogic,ABS,OptQuest,"replace static (?,?,?) periodic review parameters with a dynamic policy learned via reinforcement learning to maximise overall supply chain performance (SCP) in the presence of stochastic demand, variable lead times, and complex production processes.","Parameters (input):
+    inventory levels, processing times
+    demand: interarrival distributions, order quantities
+    Transportation: shipment volumes, transportation times
+    Cost parameters: unit manufacturing cost, raw material cost, inventory holding cost, transportation cost, tardiness fine, product prices.
+
+Performance metrics and outputs
+    revenue, manufacturing cost, transportation cost, inventory holding cost , tardiness fines, raw material cost. (total/avg), Optimal policy"
+21,Inventory Analysis and Optimization,Other/Not mentioned,A Deep Reinforcement Learning Approach For Optimal Replenishment Policy In A Vendor Managed Inventory Setting For Semiconductors,"Inventory optimization
+(choosing optimal replenishment policy)",AnyLogic,ABS,Reinforcement Learning,"Authors propose to model and simulate Vendor Managed Inventory (VMI) approach, and use reinforcement learning to select optimum inventory replenishment policy to maximize the performance of the system",Yes. Not explicitly mentioned
+22,Inventory Analysis and Optimization,Other/Not mentioned,Inventory Management under Disruption Risk,Analysis: Inventory stocking decisions in presence of disruption,SAS Simulation Studio,Hybrid DES + Monte Carlo,"SAS software's ML module is used to do analysis of simulation data, and report results.","Authors combine newsvendor model and disruption model to do analysis of inventory stocking decisions when SC is subjected to disruption (natural disaster/man made disruption). They discuss parameters like disruption impact on inventory, disruption probability, inv loss due to disruption and so on.","Yes. Demand,
+p: prob of disruptive events
+l: inv loss due to disruptive event
+inv hold cost, inv shortage cost, inv loss cost (due to disruption), inv recovery cost (to recover from disruption loss), inv capacity"
+23,Inventory Analysis and Optimization,Other/Not mentioned,Evaluating Mixed Integer Programming Models for Solving Stochastic Inventory Problems,Inventory optimization using Mixed Integer Programming,Not specified,Other,Genetic Algorithm (global optimization),Authors assess performance of MIP and propose true optimum among them using simulation based optimization methods,"Yes. Demand, Inventory Capacity, level, holding cost, penalty cost for backorder, backorders, shortfall"
+24,Inventory Analysis and Optimization,Other/Not mentioned,A Deep Q-Network Based on Radial Basis Functions for Multi-Echelon Inventory Management,Optimization: inventory policy,Python,Other,Deep Q Networks and RBF,"proposed approach is simulated in Python to assess its performance in multi-echelon supply chain.
+
+Authors propose Deep Q net and RBF to model supply chains (multi-echelon inventory problem), to optimize replenishment policy","demand, Lead time, Inventory levels, costs (shortage, order, holding)"
+25,Inventory Analysis and Optimization,Other/Not mentioned,Inventory Management with Disruption Risk,Analysis: Inventory stocking decisions in presence of disruption,SAS Simulation Studio,Hybrid DES + Monte Carlo,"SAS software's ML module is used to do analysis of simulation data, and report results.","Authors combine newsvendor model and disruption model to do analysis of inventory stocking decisions when SC is subjected to disruption (natural disaster/man made disruption). They discuss parameters like disruption impact on inventory, disruption probability, inv loss due to disruption and so on.","Yes. Demand,
+prob of disruptive events
+inv loss due to disruptive event
+inv hold cost, inv shortage cost, inv loss cost (due to disruption), inv recovery cost (to recover from disruption loss), inv capacity, base stock level"
+26,Inventory Analysis and Optimization,Other/Not mentioned,The Bullwhip Effect in End-to-end Supply Chains: The Impact of Reach-based Replenishment Policies with a Long Cycle Time Supplier,analysis: inventory policy impact in bullwhip effect,AnyLogic,SD,simulation based,Authors study how different replenishment policies impact Bullwhip Effect (BWE). They model and simulate inventory replenishment policies to show their performance analysis under BWE,"VMI (vendor managed inventory),
+Reach-based Kanban,
+Absolute stock based"
+27,Inventory Analysis and Optimization,Other/Not mentioned,Simulating Profit Loss in Behavioral Newsvendor Problems,optimum inventory levels in newsvendor problem that maximizes the profit,Not specified,Monte Carlo,different scenarios are simulated to do sensitivity analysis,"Authors use data from newsvendor experiments to calculate parameters
+for a model to predict the average ordering behavior of suboptimal decision makers. This model is used for simulation: examine how changes in the profit margin, price, and demand changes affect the financial risk","Yes. cost, profit, inventory Cost,"
+28,Inventory Analysis and Optimization,Other/Not mentioned,Simulation of Allocation Policies for a Serial Inventory System under Advance Demand Information,inventory allocation policy selection to minimize inventory cost,AnyLogic,DES,different allocation policies are simulated and performance is assessed,"ADI advance demand info is available, Order base-stock policy is used: the inventory is replenished after the order is placed by a customer. 
+
+(Making reservations/reserving your product, and then it is shipped to you)
+Allocation policies: First come first serve, Priority, Inventory Rationing, Last-minute ...","Yes. 
+Poisson demand. 
+Lead time. 
+Inventory parameters: back order, level"
+29,Inventory Analysis and Optimization,Other/Not mentioned,An Inventory-Routing Problem with Stochastic Demand and Stock-out: A Solution and Risk Analysis using Simheuristics,"Inventory routing problem (IRP) is addressed (choosing optimum route to maintain inv levels at diff nodes when transporting goods to minimize inventory and routing costs).
+
+choose optimum route to minimize total cost = routing cost + inventory cost",Not specified,Monte Carlo,"sim with different inv cap and replenishment level to find optimum 
+and
+multi-start optimization method for IRP","Logistics and Inventory optimization
+Authors address inventory routing problem: optimize route and inventory replenishment levels to minimize inventory cost as well as routing cost","Yes. Inventory replenishment level, routing cost, inv hold cost, inv stockout cost"
+30,Inventory Analysis and Optimization,Other/Not mentioned,Simulation-based Optimization of Sequencing Buffer Allocation in Automated Storage and Retrieval Systems for Automobile Production,"optimum capacity of buffers (sequencing buffers) 
+
+and re-sequencing of scrambled sequence of orders",Java,Monte Carlo,They propose method for re-sequencing in simulation,"parallelism in the production process cause scrambling in the order
+sequence, so we need to maintain sequence buffers. 
+To increase sequence stability, author propose to estimate optimum buffer capacity",No
+31,Inventory Analysis and Optimization,Other/Not mentioned,A modular hybrid simulation framework for complex manufacturing system design,Resource planning in manufacturing facility,AnyLogic,Hybrid DES + ABS,ABS and DES,"presents a modular hybrid simulation framework for designing complex manufacturing systems, integrating ABM and DES. This framework addresses limitations in current hybrid ABM-DES methods by introducing a dynamic system of parallel multi-agent discrete events, allowing for detailed modeling of manufacturing processes with high regulation and manual handling. The framework is validated through a case study in the cell and gene therapy industry, demonstrating its effectiveness in optimizing resource planning and handling dynamic complexities.","rate, capacity, schedule elements, 
+
+probabilistics distribution for design parameters, schedules and event sequencing
+
+Performance: throughput"
+32,Inventory Analysis and Optimization,Other/Not mentioned,A dynamic model for deteriorating products in a closed-loop supply chain,Analysis,Vensim,SD,Simulation based analysis,"They present a dynamic model for managing deteriorating products in a closed-loop supply chain involving a manufacturer and a distribution center. The study simulates the impact of various strategies (such as bargaining, better warehousing, and changing collection rules) on key performance indicators like total cost, total sales, and total disposal. 
+
+The results indicate that combining better warehousing conditions with more frequent collections yields the best performance. The study highlights the importance of inventory management for deteriorating products and provides insights into optimizing supply chain operations through simulation","production rate, deterioration rate, shipment rate, demand, inventory levels
+
+total sc cost, sale, disposal"
+33,Inventory Analysis and Optimization,Other/Not mentioned,Agri-food supply chains with stochastic demands: A multi-period inventory routing problem with perishable products,Inventory and routing,Not specified,Monte Carlo,optimization of inventory and routing,"IRP, optimization of perishable inventory and routing decisions to minimize inventory, costs, food waste","inventory costs, routing costs, perishable product (and parameters)"
+34,Inventory Analysis and Optimization,Other/Not mentioned,Effect of load bundling on supply chain inventory management: An evaluation with simulation-based optimisation,Inventory,AnyLogic,DES,,Supply chain application area: other,
+35,Inventory Analysis and Optimization,Other/Not mentioned,On perishable inventory in healthcare: random expiration dates and age discriminated demand,Inventory optimization,Not specified,Monte Carlo,simulation-based optimization,,
+36,"Inventory Analysis and Optimization, Logisitcs",Humanitarian and Emergency,Coupling simulation and machine learning for predictive analytics in supply chain management,"Inventory, Logistics
+
+(Inventory allocation and safety stock, Sourcing, transport, replenishment, and distribution strategies.)",AnyLogic,Hybrid DES + ABS,"Pre-crisis performance assessment of humanitarian supply chains.
+
+Coping with data scarcity, timeliness, and interpretability challenges in forecasting humanitarian logistics performance.","Authors demonstrates how coupling simulation and machine learning can overcome the data scarcity, timeliness, and interpretability issues in humanitarian supply chain predictive analytics, with a case study on the Indonesian Red Cross.","Parameters (inputs):
+
+- Disaster intensity (Gaussian distribution).
+- Initial inventory levels at warehouses.
+- Management strategies for sourcing, transport, replenishment, distribution (traditional vs refined).
+- Scenario features (encoded strategies, demand, inventory).
+
+Performance Metrics (outputs):
+
+- Cumulative delivery (pt): percentage of demand met over time.
+- Response coverage: ability to deliver aid continuously.
+- Response speed: slope of cumulative delivery curve.
+- Readiness (r): overall long-term performance metric (0–100%)."
+37,Logistics Optimization and Route Planning,Agriculture and Food,Combining the Internet of Things with Simulation-based Optimization to Enhance Logistics in an Agri-Food Supply Chain,"Inventory routing problem (IRP) is addressed (choosing optimum route when transporting items).
+
+choose optimum route to minimize routing cost",Not specified,Monte Carlo,"(Biased randomized technique with multi-start)
+use sim to generate initial solution and then iteratively improve it","Real life case study of farm animal feed SC is presented. The feedstock is transported from main warehouse to farms. Every farm has feed keeping tanks/silos which are mounted with sensor to continuously monitor its levels. When delivery trip is made (to deliver at multiple diff farms - like TSP), those farms with full/sufficient levels can be skipped. OR only select and route to those farms which ordered a shipment in such a way that the routing cost is min","inventory levels, inv cost, route cost, inv policy"
+38,Logistics Optimization and Route Planning,Agriculture and Food,Simulation-Based Order Management for the Animal Feed Industry,"Optimization (multiple aspects are modeled)
+
+transportation route selection, customer order management to minimize costs",AnyLogic,ABS,"simulation-based and
+fuzzy based decision strategy","The paper discusses a simulation model for the animal feed industry, focusing on improving order management. It proposes a fuzzy-based decision strategy for customers to decide when to order specific products.
+
+(Silo level sensors are used to monitor Silo level)","Specific: num of dairy cattle, hens, silo level, price shift"
+39,Logistics Optimization and Route Planning,Agriculture and Food,Towards A More Sustainable Future? Simulating The Environmental Impact of Online and Offline Grocery Supply Chains,"Analysis
+analyse the impact of e-grocery SC in terms of mileage and CO2 emission",AnyLogic,DES,Analysis,"e-grocery supply chains are modeled and simulated. The performance measures of the simulation are mileage, throughput, utilization etc. It is compared with traditional grocery delivery supply chains
+
+Emission model is proposed separately, that computes the emission based on the distance covered and the type of the vehicle used.","Yes. parameter table is presented
+
+vehicle type, transport capacity, vehicle utilization, daily delivery freq, daily shopping freq, locations, vehicle speed"
+40,Logistics Optimization and Route Planning,Other/Not mentioned,Real-time Supply Chain Simulation: A Big Data-Driven Approach,"optimization is not performed here, rather a framework that can handle large data from Big Data Warehouse to simulate a supply chain is proposed
+
+The data contains logistics, production and purchase info",Simio,DES,no optimization is done,,No
+41,Logistics Optimization and Route Planning,Other/Not mentioned,Simulation-based Optimization in Transportation and Logistics: Comparing Sample Average Approximation with Simheuristics,"transportation and logistics 
+
+stochastic team orienteering problem: to find the m visiting
+routes that maximize the expected aggregated reward",Not specified,Monte Carlo,SBO,"A case study addressing stochastic team orienteering problem is presented, two SBO methods are employed (Sample Average Approx SAA and Simheuristics). 
+
+The problem is represented using a graph","Yes. Nodes(customers), rewards, route(arc) (if present 1, absent 0)"
+42,Logistics Optimization and Route Planning,Other/Not mentioned,Carbon Policies in Network Distribution: A Simulation Approach for Sustainable Supply Chains,Analysis: how diff carbon policies impact transportation costs and fleet composition,AnyLogic,ABS,Analysis,"The paper investigates the impact of carbon policies on supply chain distribution networks. How diff carbon policies impacts distribution costs, fleet composition (omni-channel distribution)","cost calculation policy (dist based costs, and fixed costs - insurance, equipment)
+carbon policy (carbon tax policy
+vehicle type (and their carbon emission)
+Inventory policy (min-max policy)"
+43,Logistics Optimization and Route Planning,Other/Not mentioned,Development of DES Application for Factory Material Flow Simulation with Simpy,No optimization. Authors have developed a DES application for factory material flow simulation using SimPy (logistics),Python,DES,No optimization is done,"The research addresses limitations of commercial DES software in terms of customization and performance, particularly for complex shipyard layouts. The proposed DES model evaluates logistics for shipyard layout changes, focusing on factors like road use frequency, travel distance, and workloads",Not explicitly
+44,Logistics Optimization and Route Planning,Other/Not mentioned,Domain-specific Language for modelling and Simulating Actions in Logistics Networks,No optimization. Authors propose Logistics Assistance System that analyses logistics net and suggests promising action to take,SimChain,DES,DES is used to model and analyse logistics net do prediction,The paper showcases an example of logistics action that is modeled using proposed domain specific language,No
+45,Other,Agriculture and Food,Modeling and Simulation of Food Bank Disaster Relief Operations,Analysis of diff distribution policies in Food bank disaster supply chains to increase demand fulfillment,Simio,DES,"Analysis: simulation-based method 
+
+Authors model and simulate three different distribution policies",Authors discuss use of DES to model and simulate the operations of food banks at supply chain level. They simulate flow of donations and demand for supplies at 3 banks before and after a natural disaster,"Resource capacities (entry/exit doors, trucks, forklifts)
+Demand (arrival of donations)"
+46,Other,Agriculture and Food,A simulation model to improve the value of rice supply chain (A case study in East Java – Indonesia),simulation based optimization,Not specified,SD,simulation based,Rice supply chains,
+47,Other,Agriculture and Food,Eliciting agents’ behaviour using scenario-based questionnaire in agent-based dairy supply chain simulation,,Not specified,ABS,,Dairy supply chain,
+48,Other,Agriculture and Food,Discrete-event simulation to analyse the impacts of a reduced minimum order quantity in the food industry: proposing a shared-savings contract,,AnyLogic,DES,,Food SC,
+49,Other,Healthcare and Medical,Calibrating Simulation Models with Sparse Data: Counterfeit Supply Chains During COVID-19,Simulation model of the supply chain is calibrated to increase the similarity between the model and the system,Not specified,DES,Model calibration tunes and estimates parameters using observed data. Genetic Algorithms and Bayesian Inference are two calibration techniques.,The study evaluates how well these calibration techniques work for a counterfeit PPE simulation model. Counterfeit supply chains refer to networks where counterfeit or unauthorized goods infiltrate legitimate supply chains.,"manufacture time, lead time, inventory levels, transportation distances"
+50,Other,Healthcare and Medical,Covid-19 Supply Chain Planning: A Simulation-optimization Approach,"Inventory and resources (beds, ventilators) optimization during pandemic (COVID19)
+
+(to maximize availability)",Simio,Other,Optimization (optQuest),"The aim is to determine the optimum replenishment policy (S,s) to stock 
+personal protective equipment (PPE) (masks, gloves etc)
+i.e. Optimum values of (S,s)","Contagion Factor,
+Beds Capacity,
+Ventilator Capacity,
+Social Distancing Factor,
+Reported Cases,
+Service Area Population:,
+Contagion Duration: Uniform
+Hospital Stay Length: Triangular"
+51,Other,Healthcare and Medical,A simulation optimization approach to investigate resource planning and coordination mechanisms in emergency systems,"operations at 
+(1) Emergency Medical Services (dispatching of ambulances, preparation time, travel to the emergency scene, on-site patient care)
+(2) Emergency Department (patient registration, triage, bed assignment, physician consultation)
+(3) Observation Unit",Arena,DES,OptQuest,"simulation-optimization approach to enhance resource planning and coordination in emergency medical systems. It develops a Discrete Event Simulation (DES) model to capture the complexities of emergency healthcare, including Emergency Medical Services (EMS), Emergency Departments (ED), and Observation Units (OU). By integrating this model with optimization techniques, the study aims to improve resource allocation and ambulance deployment, demonstrating that centralized decision-making and coordination among different emergency services can significantly enhance overall system performance and patient outcomes. The findings highlight the importance of multiobjective optimization in managing emergency healthcare effectively.","response time, wait time, doctor time, length of stay, number of ambulances, num of human resources, num of material resources"
+52,Other,Healthcare and Medical,Simulating Counterfeit Personal Protective Equipment (PPE) Supply Chains During Covid-19,"Analysis:
+Counterfeit PPE supply chain behavior is modeled with disruptions",Not specified,DES,Analysis,"Law enforcements must identify the most effective disruption strategies to combat counterfeit SC, so to protect health frontline workers as well as the general population
+
+Authors propose a framework that aims to identify effective enforcement actions (disruptions) to combat counterfeit PPE supply chains, considering uncertainties",Not explicitly
+53,Other,Industrial and Manufacturing,Simulation-Based Analysis of the Nervousness within Semiconductor Supply Chain Planning: Insight from a Case Study,Analysis,Not specified,Hybrid DES + ABS,Analysis,"Analysis of instability of demand in SC caused by lack of compatibility
+between planning and real production in semiconductor supply chains",No
+54,Other,Industrial and Manufacturing,Integrated Planning of Production and Engineering Activities in Semiconductor Supply Chains: A Simulation Study,planning production and engineering activities to minimizing cost (diff production and planning costs are considered),AutoSched,Other,MIMAC 1 model (by some other authors) is extended to incorporate engineering activities,optimizing planning for production activities and engineering activities in semiconductor supply chain,"Yes. Specific attributes: production product index, ...
+
+(list of parameters specific to semiconductor manufacturing process)"
+55,Other,Industrial and Manufacturing,EPC global network design using agent-based simulation,,AnyLogic,ABS,,automotive supply chain,
+56,Other,Other/Not mentioned,Development of a data-driven Simulation Model for an Assembly-To-Order System,"Analysis and optimization:
+Authors develop data driven simulation model for Assemble To Order systems (ATO) to analyse and optimize production throughput, resource utilization, order fulfilment, inventory",FlexSim,DES,Simulation based,"This paper presents the development of a data-driven simulation model for an Assembly-To-Order (ATO) system. The model aims to identify potential conflicts or bottlenecks, assist in decision-making, and improve the manual orders planning process. It is designed to be fully data-driven, integrating with the factory’s Manufacturing Execution System (MES) and Real-Time Dashboard (RTD) for real-time data and multiple scenario simulations","Specific: Station (name, type, processor, ..)
+Conveyor (name, capacity, speed, ...)
+Resource: (name, type, capacity, ..)
+Rack: (type, capacity, location, ...)
+Plan: (order plan (assembly plan))
+Part and route (parts and their routes)
+... see tables in the paper"
+57,Other,Other/Not mentioned,Automatic Component-based Synthesis of User-Configured Manufacturing Simulation Models,Automating the creation of Manufacturing simulation models,AnyLogic,Other,Optimization of production lines (Time and cost),The paper presents a proof of concept for automating the creation of manufacturing simulation models to reduce time and cost. Authors define simulation building blocks as components and use combinatory logic synthesis to generate various model variants.,"Specific to the tool: Machine configurations, storage systems, simulation components"
+58,Other,Other/Not mentioned,Metamodel-based Quantile Estimation for Hedging Control of Manufacturing Systems,to maximize efficiency (machine utilization) while meeting the job demand times,Not specified,DES,simulation (metamodel) based optimization,"Jobs are released into the manufacturing facility according to their lead time and current state of manufacturing system. There are different such control policies to release jobs in manufacturing facility. Authors propose analysis method to use simulations and meta models to predict the state-based lead time quantiles. (Metamodels: Regression, Quantile regression)","Yes. Num of jobs/machines, job type, job lead time,"
+59,Other,Other/Not mentioned,Hyperparameter Tuning in Simulation-based Optimization for Adaptive Digital-Twin Abstraction Control of Smart Manufacturing System,Analysis: improve efficiency of manufacturing systems with DT,Not specified,Other,Genetic Algo is used for hyperparameter tuning,"The authors propose a technique that adjusts the level of detail in simulations based on real-time data, using a genetic algorithm to find the best settings. This approach aims to speed up simulations without losing accuracy,","exploration limit (num of max evals), significance level (degree of tolerance of variance between two samples), simulation runs"
+60,Other,Other/Not mentioned,Simulation-based Performance Evaluation of a Manufacturing Facility with Vertical AS/RS,Performance improvement in Manufacturing Company,AnyLogic,Hybrid DES + ABS,Analysis: impact of input uncertainties on throughput of system,"Improving the performance of a manufacturing facility by buying vertical automated storage and retrieval systems (AS/RSs) to upgrade the system. Buying AS/RS incurs cost/investment.
+Impact of new AS/RS on throughput is evaluated: that is impact of input uncertainties on throughput of system","Yes. work order arrival, service time"
+61,Other,Other/Not mentioned,Rolling-Horizon Simulation Optimization for a Multi-Objective Biomanufacturing Scheduling Problem,Optimization: production schedule optimization to minimize total production time (makespan) and lateness of customer orders,Arena,DES,Simulation based: Two methods Global search and rolling horizon are modeled and simulated to do comparison,"Authors model a complex scheduling problem in biomanufacturing, goals are to optimize the scheduling operations to minimize total production time and lateness of customer order.",Specific
+62,Other,Other/Not mentioned,Simulation-based Optimization Tool for Field Service Planning,"Resource allocation to maximize throughput
+(on site service technicians allocation planning)",AnyLogic,DES,"optimization. method not specified, any method can be used","authors are proposing a framework. They have not specified any
+optimizer name. Idea: devise a plan to deploy technicians for repair, simulate it first to assess and inspect overall performance.","Yes. Too specific. health Score, failureScore, createNextDegrade"
+63,Other,Other/Not mentioned,Hybrid Optimization Approach for Supply Chain Planning,Optimization (case study): maximizing profit while meeting makespan and service level requirement,Arena,Other,"Hybrid: Simulation + Analytical
+CPLEX optimization software",Authors propose a hybrid approach simulation+analytical for supply chain planning,"Demand, product costs, holding costs, transport costs, process time (production), workload capacity"
+64,Other,Other/Not mentioned,Investigating Production Yield Effect on Inventory Control Through a Hybrid Simulation Approach,Analysis: Authors model manufacturing process with uncertainty to improve production planning,AnyLogic,Hybrid DES + ABS,Analysis,"This paper explores how to improve production planning and control (PPC) in manufacturing by using a hybrid simulation approach. Authors model a contact lens manufacturing process with uncertain yield rates. 
+
+a simple average yield for planning can lead to backlogs and extra inventory costs, hybrid simulation helps create more accurate schedules","order, initial yield, production yield, packaging yield, inventory status"
+65,Other,Other/Not mentioned,Simulating the Impact of Forecast related Overbooking and Underbooking Behavior on MRP Planning and a Reorder Point System,"Optimization: authors assess the performance of production planning methods (MRP, RPS)",Not specified,DES,optimization,"Comparison between performance of MRP (material req planning) and 
+RPS (reorder point systems) under demand uncertainty (underbooking and overbooking)","safety stock, lot size, planned lead time, reorder point, forecast uncertainty, forecast bias"
+66,Other,Other/Not mentioned,Designing a stochastic multi-objective simulation-based optimization model for sales and operations planning in built-to-order environment with uncertain distant outsourcing,"Sales and operations planning,
+Inventory",Arena,DES,Simulation based optimization,"It aims to balance logistics costs and customer experience by evaluating two inventory strategies and optimizing flexibility and safety stock levels. The model uses a simulation-based approach to handle the complexity of supply chain systems, offering insights into managing demand-supply integration and responsiveness
+
+investigates the consequences of stochastic disruptions in terms of demands uncertainty, lost sales threshold, unreliable distant outsourcing, and corresponding costs.","demand, inventory parameters and policies, safety stock etc
+
+performance: logistics cost, customer experience level
+
+(table listing specific parameters is present in paper)"
+67,Other,Other/Not mentioned,Perspectives and relationships in Supply Chain Simulation: A systematic literature review,,Not specified,Other,,,
+68,Other,Other/Not mentioned,Simulation-based optimization of truck-shovel material handling systems in multi-pit surface mines,"Supplier operations
+(mining operations)
+truck-shovel material handling",Arena,DES,simulation based optimization,"a two-stage dispatching system for optimizing truck-shovel material handling in multi-pit surface mines. The first stage uses simulation-based optimization to assign trucks to specific pits, considering uncertainties in mining operations. The second stage employs linear programming to dispatch trucks to shovels within each pit, aiming to maximize productivity and minimize waiting times.","Num of trucks, cycle time, loading time, fill factor and carry back (material that sticks to the truck's bucket), operator competency
+
+performance: production rate, match factor, wait time, idle time, utilization rate"
+69,Other,Other/Not mentioned,Supply chain hybrid simulation: From Big Data to distributions and approaches comparison,"Material information flow at a supplier (supplier orders, material arrivals and internal arrivals)",Simio,ABS,Analysis,"a hybrid simulation model for supply chains, integrating Big Data and statistical distributions to manage uncertainty and variability. It highlights the benefits of using Big Data technologies to enhance simulation models, allowing for more accurate risk scenario testing and predictions. The proposed model can run using data from a Big Data Warehouse, statistical distributions, or a combination of both, providing flexibility and improved computational efficiency. The paper also compares these approaches, emphasizing their pros and cons, and sets a foundation for future research in supply chain simulation within Big Data contexts.","supplier order interarrival time, order quantity, production order interarrival time, lead time
+
+num of order placed, total quantities ordered, received and consumed"
+70,Other,Other/Not mentioned,"Digital Twins for Supply Chains: Main Functions, Existing Applications, and Research Opportunities",No analysis or optimization,Not specified,Other,None,"paper highlights the benefits of digital twins (improved customer service, cost reduction, and increased profits). 
+
+It identifies challenges in implementing DT (complexity, need for continuous data updates).",None
+71,Other,Other/Not mentioned,Distributed Approaches to Supply Chain Simulation: A Review,None,Not specified,Other,None,"This paper reviews distributed supply chain simulation (DSCS), highlighting its advantages over conventional single-model simulations (faster execution, interoperability, and data hiding)
+
+presents a methodological framework for analyzing DSCS",None
+72,Other,Other/Not mentioned,Simulation Optimization for Supply Chain Decision Making,No analysis or optimization,Not specified,Other,None,"Authors discuss the structure and optimization of supply chains, emphasizing the importance of stochastic and hybrid models for realistic approximations",None
+73,Other,Other/Not mentioned,A Simulation-Based TDABC Model to Manage Supply Chain Costing: A Case Study,No analysis or optimization,AnyLogic,DES,None,Authors build a simulation-based costing framework (to account for real time events happening in a supply chain that contributes to SC costs) that integrates DES and Time-Driven Activity-based Costing,"Specific: capacity cost (department cost over total capacity supplied)
+truck arrival rate, unloading time, inspect time, resource availability"
+74,Other,Other/Not mentioned,On the use of simulation as a Big Data semantic validator for supply chain management,"Analysis
+
+They model the flow of materials and info between suppliers, the plant, and customers. AND
+supply chain activities such as order placement, material arrivals, and production scheduling",Simio,Other,,"discusses the use of simulation as a semantic validator for Big Data in Supply Chain Management (SCM). It highlights how simulation can identify data issues that traditional profiling techniques miss, ensuring more accurate SCM models. The study, conducted at a Bosch plant, integrates real data into a simulation model using Big Data technologies like Hadoop and Hive. The authors propose a classification for data issues and demonstrate the significant role of simulation in improving data quality and SCM efficiency.",
+75,"Planning, production planning",Industrial and Manufacturing,Catastrophe insurance and flexible planning for supply chain disruption management: a stochastic simulation case study,"Planning 
+
+Production planning
+Transportation planning",PySP and Gurobi,Monte Carlo,,"Problem: How to plan production and transportation for a global, multi-echelon supply chain that faces rare but severe catastrophes and uncertain demand, and how catastrophe insurance interacts with flexible operational planning to influence total costs and damage outcomes.
+
+Authors formulated a two-stage stochastic programming model that produces first-stage (non-anticipative) production and transport plans while accounting for probabilistic catastrophe timing, duration, and demand uncertainty.
+They solved representative scenario sets (extensive form, expected-value, highest-cost) using optimisation solvers and then evaluated solutions by simulation over large out-of-sample scenario sets to estimate expected supply-chain costs and damage costs.
+They performed sensitivity analyses on insurance compensation rates, residual value, catastrophe timing, and scenario sampling to reveal how insurance can unintentionally increase damage via operational responses, and they derived managerial recommendations to mitigate such effects.","Parameters
+Catastrophe parameters: probability of occurrence, uniformly distributed outbreak time in second stage, exponentially distributed recovery duration.
+Demand parameters: normally distributed demand
+Cost parameters: purchasing, production, transportation, storage, stockout costs, and residual value accounting.
+Insurance parameters: compensation (indemnity) rate; residual value rate of products.
+
+Performance metrics
+Total expected supply-chain cost 
+First-stage cost (preparation cost) and second-stage cost (realisation cost).
+Expected damage cost"
+76,"Planning, production planning",Industrial and Manufacturing,A two-level optimisation-simulation method for production planning and scheduling: the industrial case of a human--robot collaborative assembly line,"Planning 
+
+Production planning",Simio,DES,Simulation based optimization,"Problem: Produce capacity-feasible, cost-effective production plans and schedules for a human–robot collaborative assembly line where aggregated optimisation alone can overestimate capacity and ignore robot travel/setup dynamics.
+
+How addressed: The authors developed a two-level MILP (planning + scheduling) embedded in an iterative ROSA loop with a detailed SIMIO DES model. The optimisation proposes release quantities, resource allocations and sequences; the simulation validates feasibility, measures realistic utilisation/downtime/travel, and returns recursive parameters (?, ?, ?, ?) that tighten optimisation constraints. Iterations continue until convergence (stable total output, late-order rates). Experiments include layout comparisons, stochastic process characterisation, and sensitivity analyses showing the method converges to near-optimal, implementable plans while revealing managerial insights on robot allocation and layout design.","Parameters:
+Resource limits: up to 5 shared robots (minimum 2 per period in experiments); robot speed, setup/changeover times, workspace distances.
+Processing times
+Costs: production cost, inventory cost, backlog cost, robot assignment and allocation costs (numerical values used in experiments).
+
+Performance metrics:
+Total operational cost
+Makespan 
+Number of robot tasks allocated
+Workstation utilisation rates
+Percentage of late orders / on-time delivery"
+77,"Planning, production planning",Industrial and Manufacturing,Semiconductor wafer fabrication production planning using multi-fidelity simulation optimisation,"Planning 
+
+Production planning",Not specified,DES,Simulation based optimization,"Production/release planning for wafer fabs where cycle times depend on workload (re-entrant flows, batch processing, machine unreliability). The paper tackles the tension between accuracy (high-fidelity DES) and computational cost by proposing a multi-fidelity simulation-optimisation approach to select release plans that maximise profit while keeping simulation budget feasible.
+
+Problem: Find profitable weekly release plans for a complex, re-entrant wafer fabrication system where cycle times depend on workload, but exhaustive high-fidelity simulation of many candidate plans is computationally prohibitive.
+How they addressed it: The authors built a fast low-fidelity epoch/queueing approximation that reliably ranks candidate release plans by ordinal performance, then applied the MO2TOS multi-fidelity optimisation (Ordinal Transformation + OCBA sampling) to allocate a limited high-fidelity DES budget to the most promising groups. Experiments (70% and 90% utilisation scenarios) show MO2TOS finds better release plans faster than SPSA and naive sampling, reducing computation time while improving profit and WIP matching","Parameters:
+Processing time distributions (lognormal processing times per workstation)
+Failure/repair distributions (gamma distributions for unreliable machines)
+Batch sizes
+Planning horizon (26 weekly periods + extra periods to finish in-process lots)
+Release bounds
+Demand
+
+Performance metrics and outputs
+total profit (revenue ? material ? WIP ? inventory ? backlog costs).
+Cost breakdowns: inventory cost, WIP holding cost, backlog cost, material cost.
+computational time (total simulation hours), convergence behaviour."
+78,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,Risk assessment model using conditional probability and simulation: case study in a piped gas supply chain in Brazil,Risk assessment,SuperDecisions,Monte Carlo,Analysis and Risk assessment,"this paper develops a risk assessment model that integrates Analytic Network Process (ANP), Monte Carlo simulation, and Bayesian conditional probability to evaluate dependent risks in a piped gas supply chain, showing that demand risk in the customer company (Y) is the most critical driver of vulnerability across the chain.","Parameters (inputs):
+    25 risk categories identified via systematic literature review (environmental, strategic, demand, supply, price, fiscal, market, operational, informational, etc.).
+    100 risk factors (e.g., unexpected demand fluctuations, raw material quality issues, political/economic uncertainties).
+    Expert judgments from 12 specialists (6 per company) across managerial areas.
+    Triangular probability distributions (minimum, most likely, maximum values) for risk occurrence."
+79,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,"Assessing resilience measures in the Austrian dairy supply chain: a case-based simulation integrating strategic, tactical, and operational decisions","Resilience assessment
+    (Backup stocks.
+    Backup supply (import options).
+    Backup transportation.
+    Changed reorder policies.)",AnyLogic,DES,"Evaluating resilience measures across strategic, tactical, and operational levels.
+
+Addressing demand surges (panic buying) and transportation shortages (truck/fuel/driver constraints).","this article demonstrates how integrated resilience measures (backup stocks, supply, transport, policy changes, operational adaptation, early-warning) can be quantitatively assessed in a discrete-event simulation of the Austrian dairy supply chain, highlighting their effectiveness in mitigating short-term disruptions.","Parameters (inputs):
+    Number of dairy factories (25).
+    Number of distribution centres (31).
+    Number of retail stores (3,868).
+    Trucks per dairy (20) and total trucks (1,301).
+    Processing times (24 hours at factories, 12 hours throughput).
+    Reorder policy (order-up-to with safety stock).
+    Routing algorithm (nearest-neighbour).
+    Consumer demand distribution (empirical data).
+    Disruption scenarios:
+        Demand increase (50–100%).
+        Transportation capacity reduction (one-third fewer trucks).
+
+Performance Metrics (outputs):
+    Share of demand met (resilience indicator).
+    Unmet demand percentage (during disrupted vs non-disrupted periods).
+    Inventory positions at factories, distribution centres, and retail stores.
+    Number of days with demand fulfilment >90%, 95%, 99%.
+    Mean inventory levels and standard deviation.
+    Sensitivity analysis of disruption magnitude."
+80,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,A simulation model for addressing supply chain disruptions under a multi-capital sustainability perspective: a case study in the agri-food sector,Analysis of supply chain under disruption,AnyLogistix,DES,Simulation based,Agri-food supply chain,
+81,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,Assessing operational resilience in food supply chains: a discrete-event simulation approach based on a framework for integrated decision-making,resilience analysis,AnyLogic,DES,simulation based,Food SC - Dairy SC,
+82,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,Simulation-based Digital Twin Development for Blockchain Enabled End-to-end Industrial Hemp Supply Chain Risk Management,Analysis of Hemp supply chain for risk control,Not specified,Other,Analysis,"Hemp is a plant, Industrial Hemp SC includes entire process of planting Hemp seeds, growing them to the final sale. Authors propose to develop Blockchain enabled IHSC to track data and key info, improve transparency and involve local authorities (quality control). They develop a DT to simulate and analyse IHSC to understand the processes in the SC and minimize risks. (Simulation for seed selection)","Yes. Arrival of seeds, pre-plant prepare time, cultivation time, harvest time ... (specific params)"
+83,"Resilience Modeling, Risk Estimation and Mitigation",Agriculture and Food,A simulation model for addressing supply chain disruptions under a multi-capital sustainability perspective: a case study in the agri-food sector,risk analysis,AnyLogistix,DES,Simulation based,supermarket SC,
+84,"Resilience Modeling, Risk Estimation and Mitigation",Healthcare and Medical,An Integrated System Dynamics and Discrete Event Supply Chain Simulation Framework for Supply Chain Resilience with Non-stationary Pandemic Demand,Analysis: Hybrid simulation framework to improve resilience,AnyLogic,Hybrid DES + SD,Analysis,"The paper proposes a hybrid simulation framework integrating system dynamics and discrete event simulation to enhance supply chain resilience during disruptions like the COVID-19 pandemic
+
+Authors present case study of Oxygen Concentrators (medical device used to deliver oxygen to patient) during COVID19 pandemic","Specific: illness duration, hospitalization rate, OC inventory rate, OC inventory levels"
+85,"Resilience Modeling, Risk Estimation and Mitigation",Healthcare and Medical,Simulation of IT Data Integration to Optimize an Antibiotics Supply Chain with System Dynamics,"Optimization of Antibiotic Supply chains
+(Mitigating disruption by improving communications)",Vensim,SD,Simulation-based with Data Integration,"authors model on multiple aspects of AB supply chain: planning, reducing lead time, and inventory to prevent shortage and excess.
+They also discuss data integration for communication: electronic data exchange, point of sale data","shipment rate, production rate, order fulfillment rate, delivery rate, order rate, usage rate (raw product)"
+86,"Resilience Modeling, Risk Estimation and Mitigation",Healthcare and Medical,Assessing Resilience of Medicine Supply Chain Networks to Disruptions: A Proposed Hybrid Simulation modelling Framework,Analysis,AnyLogic,Hybrid DES + ABS + SD,Analysis,"Authors model and simulate a medicine SC (wholesaler, warehouse, point of sale, supplier, pharma ingredients producer) with disruptions (demand shock, and supply shock) to improve medicine SC.","Inventory replenishment policy (s,S), inventory parameters"
+87,"Resilience Modeling, Risk Estimation and Mitigation",Healthcare and Medical,A Simulation-Based Method for Analyzing Supply Chain Vulnerability Under Pandemic: A Special Focus on the Covid-19,Analysis,Not specified,ABS,Analysis: Simulation-based,The article presents a simulation-based method to analyze supply chain vulnerabilities during the COVID-19 pandemic. It combines the susceptible-infected-recovered (SIR) model with agent-based simulation to study risk propagation from distribution centers to retailers,"Quarantine Start Day: The day quarantine measures begin.
+Quarantine Duration: The length of the quarantine period.
+Daily Testing Capacity: The number of tests conducted daily.
+Contact Tracing Effectiveness: The efficiency of tracing contacts of infected individuals.
+Symptomatic Test Rate: The rate at which symptomatic individuals are tested.
+Infectivity: The rate at which the virus spreads."
+88,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,Effects of adaptive cooperation among heterogeneous manufacturers on supply chain viability under fluctuating demand in post-COVID-19 era: an agent-based simulation,"Demand forecast
+
+Production capacity and utilization (max/min capacity, capacity utilisation).
+Order allocation and outsourcing across firms
+Cooperation behaviours: cooperation establishment, win-win cooperation, cooperation priority (hubs prefer other hubs).
+Demand fluctuation dynamics (multi-period epidemic waves)",Python,ABS,Analysis,"Supply chain viability (SCV) under fluctuating demand caused by recurrent pandemic waves.
+
+Investigates how adaptive horizontal cooperation among heterogeneous manufacturers (hub LEs and non-hub SMEs) mitigates demand volatility, prevents hub failures, and improves system-level survivability.","Parameters (input)
+    N = number of manufacturer nodes (default 1,000).
+    Averaged degree ?K? (connectivity density of BA network).
+    Hub selection: top 20% highest-degree nodes designated as hub manufacturers; remaining 80% are non-hub.
+    Initial load computed from node degree and neighbour degrees;
+    Maximum capacity, Minimum capacity, Agent order load, extra order, actual production 
+    Cooperation parameters
+    Demand ( fluctuating demand profile derived from COVID-19 waves)
+
+Performance metrics
+
+    Capacity Utilisation Rate 
+    Productivity Saturation 
+    On-Time Delivery Rate 
+    Relative Productivity Efficiency: ratio of total hub production capacity to non-hub production capacity
+    Relative Order Efficiency: ratio of orders received by hubs to orders received by non-hubs.
+    Viability indicator: proportion of surviving hub manufacturers (1 ? failed hubs / total hubs)"
+89,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,A Hybrid System Dynamics/Input-Output Model for Studying the Impact of Transportation Delays on the Resilience of National Supply Chains,Analysis: effect of transportation delays on supply chains,Not specified,SD,Analysis,Authors model transportation delays (and flow of goods) in national supply chain (that is responsible for delivering to different industrial supply chains) with disruptions to study its impact on industry and assess resilience,"Demand, total production, industry consumption, industry inventory levels, delivery delay"
+90,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,System Dynamics Simulation of External Supply Chain Disruptions on a Simplified Semiconductor Supply Chain,Analysis: the impact of external disruptions on the semiconductor supply chain,AnyLogic,SD,Simulation-based,"The paper discusses the use of system dynamics simulation to analyze the impact of external disruptions (natural disasters, pandemics etc) on the semiconductor supply chain.
+Authors build a semiconductor supply chain model, which can be subjected to what-if scenarios to assess the resilience.",Specific parameters to semiconductor supply chains.
+91,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,Simulating and evaluating supply chain disruptions along an end-to-end semiconductor automotive supply chain,Analysis: multi echelon supply chain analysis under disruption events (pandemic/covid),AnyLogic,Hybrid DES + ABS + SD,analysis,"a simulation model to understand how a multi-level supply chain responds in pandemic. Pandemic causes fluctuations in demand, which leads to operational challenges in SC. To face these, SC partners should work in collaboration, which makes SC more resilient",Not explicitly mentioned
+92,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,Analyzing Pre-Positioning within a Disrupted Bulk Petroleum Supply Chain,"Analysis: supply chain disruption events are modeled. (hurricane)
+
+authors model different disruption mitigation strategies and assess their effectiveness",Not specified,Other,"analysis: pre-positioning disruption mitigation strategy is illustrated in paper
+
+- leads to optimization problems","authors also show effects of disruption on inventory levels, and resumption of normal inventory conduct after the end of disruption","inventory Policy, inventory params
+
+some specific about disruption duration, duration to recover from disruption and so on"
+93,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,Evaluating the supply chain resilience strategies using discrete event simulation and hybrid multi-criteria decision-making (case study: natural stone industry),simulation of different strategies to choose one,Not specified,DES,simulation based,Natural stone SC,
+94,"Resilience Modeling, Risk Estimation and Mitigation",Industrial and Manufacturing,A system dynamics model for assessing the ripple effect of intertwined supply networks,risk analysis,Vensim,SD,simulation based,Semiconductor SC,
+95,"Resilience Modeling, Risk Estimation and Mitigation",Information and Communication Technology (ICT),Product Life Cycle Perspective on ICT Product Supply Chain Resilience,"Analysis 
+analyzing the relations between the supply chain configuration and its ability to deal with vulnerabilities.",Not specified,Monte Carlo,Analysis,"Information and Telecommunication Technologies (ICT) supply chains, 
+(example: smart watch, vulnerabilities: regular security updates)
+
+Authors propose to model and simulate the ICT supply chains to find relationship between SC configuration, vulnerabilities and SC resiliences","Yes. product life cycle length, product monitor cost, node failure prob, cost of treating vulnerability"
+96,"Resilience Modeling, Risk Estimation and Mitigation",Information and Communication Technology (ICT),Evaluating the Effectiveness of Countermeasures in ICT Supply Chains through Elicitation-Informed Simulation,Analysis: evaluating countermeasures (CMs) in Information and Communication Technology (ICT) supply chains (SCs) to combat counterfeiting,AnyLogic,Hybrid DES + ABS,Analysis,authors model ICT (Info Comm Tech) supply chains with disruptions to combat counterfeiting. They also assess the resilience of the supply chain.,
+97,"Resilience Modeling, Risk Estimation and Mitigation",Information and Communication Technology (ICT),A Simulation-Optimization Approach for Designing Resilient Hyperconnected Physical Internet Supply Chains,Optimization: of cost and resilience of supply chain by integrating with Physical Internet,Not specified,DES,,Authors propose hybrid model DES+MIP to optimize SC resilience and costs. They model SC operations under disruptions,"SC nodes: supplier, customers, hubs
+costs
+capacities (supplier, hubs)
+Disruptions (and their prob)"
+98,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,Simulation-Driven Digital Twins: The DNA of Resilient Supply Chains,Analysis: the concept of digital twins and their importance in creating resilient supply chains,Not specified,Other,Analysis,discusses the concept of digital twins and their importance in creating resilient supply chains. The paper outlines required characteristics of digital twins and emphasizes the role of simulation in their development.,Not explicitly mentioned
+99,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,A System Dynamics Model for Studying the Resiliency of Supply Chains and Informing Mitigation Policies for Responding to Disruptions,Analysis: study economic impact of supply chain disruptions,Stella Architect,SD,Analysis: hybrid SD and Input Output IO model is developed to study the economic impact of supply chains disruptions,"Authors develop SD and IO model of supply chains with disruptions to assess the resilience and understand its economic impact (changes in economy of region or country - employment, gross income, production, etc)","Yes, specific to disruption modeling,
+speed of inv adjustment, labor hiring adjustment, consumption adjustment"
+100,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,Additive manufacturing integration in E-commerce supply chain network to improve resilience and competitiveness,"Analysis
+two echelon SC net with AM",Arena,DES,OptQuest,"The paper explores the integration of additive manufacturing (AM), specifically 3D printing, into e-commerce supply chains to enhance resilience and competitiveness. It investigates three utilization policies: reactive, proactive, and no-AM, within a two-echelon supply chain network. The study uses simulation optimization to analyze the impact of AM on various performance metrics like total network cost and response time. Findings indicate that the reactive policy significantly improves network performance, especially under low-demand scenarios, by reducing holding and ordering costs. The research provides valuable insights for managers on optimizing supply chain operations using AM, particularly during disruptions like the COVID-19 pandemic.","production cost, lead time, max response time (mrt), demand distribution, inventory holding cost, ordering cost
+
+total sc cost, response time, inventory levels"
+101,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,A generic representation of supply network resilience using simulation based experimentation,SC network resilience,NetLogo,ABS,simulation based,sc not mentioned,
+102,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,Modeling Risk Prioritization of a Manufacturing Supply Chain using Discrete Event Simulation,"Analysis: 
+Authors build the model to study risks in supply chain, prioritize them and help in decision making and developing mitigation strategies",Python,DES,Analysis: Simulation-based,Authors build a simulation model with risks to assess the performance and impact of various risks and prioritize them.,"likelihood of risk event, impact, time to fix disruption"
+103,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,The role of simulation and optimization methods in supply chain risk management: Performance and review standpoints,,Not specified,Other,,Survey paper. Simulation based optimization for risk management,
+104,"Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,"An agent-based model of supply chain financing: agents’ strategies, performance, and risk contagions",risk analysis,NetLogo,ABS,simulation based,not specified,
+105,"Resilience Modeling, Risk Estimation and Mitigation; Supply Chain Design",Other/Not mentioned,Simulation-optimization methods for designing and assessing resilient supply chain networks under uncertainty scenarios: A review,review paper,Not specified,Other,,"highlights the importance of addressing uncertainty and risk in SCN design, emphasizing the need for resilience to recover from disruptions. The review categorizes existing literature based on methodologies, approaches to uncertainty, and the integration of metaheuristics, simulation, and machine learning. It identifies research opportunities, such as incorporating multiple criteria (monetary, environmental, social) and developing hybrid approaches to better handle dynamic conditions.",
+106,"Resilience Modeling, Risk Estimation and Mitigation; Supply Chain Design",Other/Not mentioned,Simulation-optimization methods for designing and assessing resilient supply chain networks under uncertainty scenarios: A review,"supply chain design
+(review paper)",Not specified,Other,,"The paper reviews the use of simulation-optimization methods for designing and assessing resilient supply chain networks (SCNs) under uncertainty scenarios. It highlights the importance of resilience in SCNs, especially in the face of disruptions like natural disasters and pandemics. The authors classify existing literature based on methodologies, approaches to uncertainty, and resilience factors. They emphasize the need for hybrid approaches combining metaheuristics, simulation, and machine learning to handle dynamic conditions",
+107,Supply Chain Design,Agriculture and Food,An Agent-based Modelling Framework for Urban Agriculture,"Location (design) of supply chain nodes in order to maximize several performance metrics of the chain
+
+e.g. predict/optimize location of retailers to maximize customer satisfaction (minimize trip dist and trip time)",Repast,ABS,Study showcases simulation with different scenarios. (GIS data of agricultural supply chain is used in simulation),The project is available in GitHub,No
+108,Supply Chain Design,Agriculture and Food,Relief Food Supply Network Simulation,Analysis: to support management decision,Not specified,Other,Simulation-based analysis,a simulation model of the relief food distribution to refugees in a region that is vulnerable to multiple disasters on a daily basis. Authors model and simulate the supply chain and assess when the SC faces increased demand,"disaster_type, disaster_location, n_refugee (arrival), relief_food_demand,"
+109,Supply Chain Design,Healthcare and Medical,Primary Healthcare Delivery Network Simulation Using Stochastic Metamodels,"Primary Health Center (PHC) network analysis using simulation-based methods
+
+Evaluate (1) effect of patient flow, (2) effect of new PHC in network, (3) referrals (patient transfers from PHC to PHC)",Not specified,DES,stochastic metamodeling approach,PHC network is simulated (DES). A stochastic metamodel is built on top on the DES to save time. Authors propose analysis of the system to address important design choices of the system,"Yes. Doctor consultation time, service time at pharmacy and labs, patient arrival rate"
+110,Supply Chain Design,Healthcare and Medical,Combining Simulation with Reliability Analysis in Supply Chain Project Management under Uncertainty: A Case Study in Healthcare,"Analysis of reliability of SC
+(emphasis on which nodes are connected to which, or how certain paths in SC can bottleneck) - instead of locations",Not specified,Monte Carlo,Simulation-based,"A supply chain can be logically represented as multiple processing paths. Under stochastic conditions, it is hard to assess the reliability. Authors propose to build a logical representation of SC and then analyse it using simulation to assess reliability and to identify bottleneck paths","Yes. n tasks, tasks processing time t (random)"
+111,Supply Chain Design,Humanitarian and Emergency,A Simulation Model for Short and Long Term Humanitarian Supply Chain Operations Management,Design of the supply chain,Arena,DES,"simulation-based 
+(authors model and simulate multiple designs considering different aspects of SC to find the optimum one)","Traditionally, humanitarian supply chains are designed separately for different disaster phases, (speed for immediate response and cost reduction for reconstruction)
+Authors propose a sustainable supply chain network integrating lean and agile principles to ensure a smooth transition from response to reconstruction.",Not explicitly mentioned
+112,Supply Chain Design,Other/Not mentioned,A Simulation-Optimization Approach for Locating Automated Parcel Lockers in Urban Logistics Operations,"To find minimum-cost number of APL to be installed every year, and estimate their locations",Not specified,SD,simulation-based,"APL: locker boxes, for which the owner and delivery person has key/code (kind of no contact delivery). A delivery person can leave the parcel in the box and lock it, and owner can get the parcel whenever he/she is available. Cost of this method is lower than home deliveries, and there are no missed deliveries.","Yes. Table summarizing parameters is presented in the paper.
+
+population, service level, number of deliveries, online purchase rate,"
+113,Warehouse Operations Optimization,Other/Not mentioned,A Simulation Model to Determine Staffing Strategy and Warehouse Capacity for a Local Distribution Center,"warehouse operation optimization to maximize warehouse capacity utilization
+
+(1) loading preparation
+(2) warehouse staffing (staff that load/unload boxes, sorts, puts at right places)",Simio,DES,Different scenarios are simulated and analysed to find the optimum,Optimal Team Formation and Job Assignment to Optimize Warehouse Operations,"Yes. Arrival modeled using Poisson process.
+Rest: specific parameters in warehouse operation. (stock Levels)
+
+e.g. Contract Type (fixed-term, perm, casual), Shift (day, night), level (expert, med, beginner)"
+114,Warehouse Operations Optimization,Other/Not mentioned,Optimal Team Formation and Job Assignment to Optimize Warehouse Operations,"Optimization of warehouse operations at manufacturer
+(determining optimum team formation, buffer allocation and job assignments to minimize total time required to unload, scan, breakdown and store parts (which is gonna used in manufacturing)",Arena,DES,OptQuest,"Authors model and simulate operations at a warehouse (unloading). The work focuses on determining the optimal team formation, buffer allocation, and job assignment to minimize the total time required to unload, scan, breakdown, and store parts from sea-containers and trailers","Number of teams, num of forklifts, workforce (teams available for various operations - scanner, forklift operator etc)"
+115,Warehouse Operations Optimization,Other/Not mentioned,A simulation-based experimental design for SBS/RS warehouse design by considering energy related performance metrics,Warehouse operations,Arena,DES,Simulation based analysis/optimization,"The paper discusses a simulation-based experimental design for optimizing Shuttle-Based Storage and Retrieval Systems (SBS/RS) in warehouses, focusing on energy-related performance metrics","arrival (Poisson), speed and acceleration of lifts and shuttles, number of aisles
+
+performance: avg cycle time, energy consumption"
+116,Warehouse Operations Optimization,Other/Not mentioned,A simulation study on the robotic mobile fulfillment system in high-density storage warehouses,Analysis,Not specified,Other,Simulation based,"investigates the Robotic Mobile Fulfillment System (RMFS) in high-density storage warehouses, focusing on improving space utilization and picking efficiency. It introduces a simulation platform to compare traditional and high-density RMFS layouts, revealing that high-density layouts can save around 10% of storage space while maintaining similar robot deployment and energy consumption levels. The study also addresses challenges like task assignment, path planning, and traffic control in high-density environments, proposing solutions for blocking and deadlock issues.","components in the model: robot, pod, zone, task (and associated param)
+
+Throughput, wait time, total travel dist, num of deadlocks"
+117,Warehouse Operations Optimization,Other/Not mentioned,A simulation-based evaluation of warehouse check-in strategies for improving inbound logistics operations,"Warehouse operations
+Inbound logistics",Simio,DES,Analysis,"evaluates different strategies to improve the check-in process for inbound logistics at a warehouse, aiming to reduce detention fees and CO2 emissions. 
+The study compares current operations with proposed policies like staging areas, dynamic dispatching rules, and automated technology. The results suggest that a staging area with dynamic dispatching rules offers a cost-effective short-term solution, while automated technology provides the best long-term benefits by eliminating detention fees and significantly reducing CO2 emissions","Truck arrival rate, check-in process time, truck type and size,
+performance: detention fees, CO2 emmission, truck turnaround time"
+118,Warehouse Operations Optimization,Other/Not mentioned,A dynamic simulation framework based on hybrid modeling paradigm for parallel scheduling systems in warehouses,"Warehouse operations
+(including job scheduling)",AnyLogic,Hybrid DES + ABS,simulation based,"They propose a framework (integrated control methodology ICM) based on the state changes of dispatchers & logistics equipment, behaviour of dispatchers. This method is incorporated in warehouse workflow model. They present a case study to showcase the feasibility of the proposed framework.",
