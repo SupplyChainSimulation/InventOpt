@@ -11,6 +11,8 @@ __pycache__/
 
 # sheets
 *.ods
+*.ods.bak
 *.xls
 *.xlsx
 .~lock.*
+*.pdf
