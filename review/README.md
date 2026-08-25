@@ -7,7 +7,7 @@ This folder contains artifacts from two literature reviews that are part of a ma
 - Which simulation methods are used to model these aspects?
 - Which tools and frameworks are available for building supply chain simulation models?
 
-The reviews draw on over one hundred papers in the simulation modeling and operations research domains, selected from leading conferences and journals. Approximately 60 papers come from the Winter Simulation Conference (WSC), 20 from *Simulation Modelling Practice and Theory* (SIMPAT), 15 from the *Journal of Simulation* (JoS), 12 from IJPR, and 5 from *ACM Transactions on Modeling and Computer Simulation* (TOMACS), with the remainder drawn from other venues.
+The reviews draw on 112 papers in the simulation modeling and operations research domains, selected from leading conferences and journals. 69 papers come from the Winter Simulation Conference (WSC), 15 from *Simulation Modelling Practice and Theory* (SIMPAT), 14 from the *Journal of Simulation* (JoS), and 12 from IJPR. The remaining two are from the ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (PADS) and the International Conference on Management Science and Industrial Engineering (MSIE).
 
 ## Contents
 
@@ -15,7 +15,7 @@ Every artifact is provided as a CSV file for reuse and as a PDF file for reading
 
 | Artifact | Contents |
 | --- | --- |
-| Reviewed papers categorization | 118 publications, 10 columns |
+| Reviewed papers categorization | 112 publications, 10 columns |
 | Node attributes and performance measures | 17 attributes, 23 performance measures |
 | Edge attributes and performance measures | 8 attributes, 6 performance measures |
 | Graph attributes and performance measures | 3 attributes, 20 performance measures |
