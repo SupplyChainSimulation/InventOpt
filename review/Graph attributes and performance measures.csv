@@ -1,8 +1,10 @@
-,Supply Chain Network Graph Attributes,
+﻿,Supply Chain Network Graph Attributes,
 Sr,Attribute/Feature,Description
 1,Number of nodes,Total number of nodes in the SC network
 2,Number of edges,Total number of links in the SC network
 3,Type of SC,"Type of supply chain (Forward, Reverse, Closed-loop)"
+4,Demand,"Demand faced by the network, given rather than chosen"
+5,Demand Variability,"Variability of demand across the network, such as its distribution or seasonality"
 ,,
 ,Supply Chain Network Graph Performance Measures,
 Sr,Performance Measure,Description

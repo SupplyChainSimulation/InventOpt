@@ -16,9 +16,9 @@ Every artifact is provided as a CSV file for reuse and as a PDF file for reading
 | Artifact | Contents |
 | --- | --- |
 | Reviewed papers categorization | 112 publications, 10 columns |
-| Node attributes and performance measures | 17 attributes, 23 performance measures |
-| Edge attributes and performance measures | 8 attributes, 6 performance measures |
-| Graph attributes and performance measures | 3 attributes, 20 performance measures |
+| Node attributes and performance measures | 24 attributes, 24 performance measures |
+| Edge attributes and performance measures | 13 attributes, 6 performance measures |
+| Graph attributes and performance measures | 5 attributes, 20 performance measures |
 
 ## Reviewed papers categorization
 
@@ -56,3 +56,5 @@ A paper that spans two classes carries both values in the cell, separated by a s
 Three separate files detail the key and recurring parameters identified across the reviewed supply chain issues, including node-related, edge-related, and network-related parameters, along with their associated performance measures.
 
 Each file contains two blocks. The first block lists attributes, meaning the inputs that describe the network, such as inventory capacity and reorder level at a node, or lead time and transportation cost on an edge. The second block lists performance measures, meaning the outputs evaluated from a simulation run, such as customer service level at a node or supply chain net profit for the network. Each entry gives a serial number, the name of the attribute or measure, and a description.
+
+Nodes and edges carry a parallel set of disruption entries: a probability of failure, a disruption duration, a recovery duration, and a disruption cost. The node table pairs these with a disruption waste measure that records the inventory destroyed by a disruption.
