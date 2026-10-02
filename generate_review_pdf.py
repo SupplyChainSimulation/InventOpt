@@ -1,5 +1,8 @@
 """Print the 'Categorization (merged)' sheet of Review.ods to review/Reviewed papers categorization.pdf.
 
+The rows and columns printed are the ones generate_review_csv.py publishes: only
+rows marked Included = yes, renumbered, without the Link and Included columns.
+
 Converting Review.ods directly gives a bad printout (the sheet carries stored
 print state that breaks the page every ~2 rows), so this script rebuilds a
 clean single-sheet spreadsheet from the cell values with print-friendly
@@ -15,11 +18,10 @@ this runs, but unsaved changes will not appear in the PDF.
 import os
 import shutil
 import subprocess
-import sys
 import tempfile
 
 from odf.namespaces import STYLENS
-from odf.opendocument import OpenDocumentSpreadsheet, load
+from odf.opendocument import OpenDocumentSpreadsheet
 from odf.style import (MasterPage, PageLayout, PageLayoutProperties,
                        ParagraphProperties, Style, TableCellProperties,
                        TableColumnProperties, TableProperties,
@@ -27,6 +29,8 @@ from odf.style import (MasterPage, PageLayout, PageLayoutProperties,
 from odf.table import (Table, TableCell, TableColumn, TableHeaderRows,
                        TableRow)
 from odf.text import P
+
+from generate_review_csv import public_rows
 
 REPO_DIR = os.path.dirname(os.path.abspath(__file__))
 SOURCE_ODS = os.path.join(REPO_DIR, "Review.ods")
@@ -40,24 +44,10 @@ PAGE_HEIGHT = "29.7cm"
 MARGIN = "1cm"
 FONT_SIZE = "8pt"
 HEADER_BG = "#B3C6E7"
-# Column widths (cm): Sr, Supply chain problem, Application domain, Title,
-# Specific aspect, Tools, Simulation method, Optimization method, Comments,
-# Any attributes. Together they must fit the page width minus margins.
-COLUMN_WIDTHS = [0.9, 3.2, 3.0, 5.5, 6.0, 2.4, 2.4, 3.0, 7.5, 5.0]
-
-
-def read_sheet(path, sheet_name):
-    doc = load(path)
-    for table in doc.spreadsheet.getElementsByType(Table):
-        if table.getAttribute("name") == sheet_name:
-            rows = []
-            for row in table.getElementsByType(TableRow):
-                cells = []
-                for cell in row.getElementsByType(TableCell):
-                    cells.append("\n".join(str(p) for p in cell.getElementsByType(P)))
-                rows.append(cells[: len(COLUMN_WIDTHS)])
-            return rows
-    sys.exit(f"Sheet {sheet_name!r} not found in {path}")
+# Column widths (cm): Sr, Supply chain problem, Application domain, Title, Year,
+# Venue, Specific aspect, Tools, Simulation method, Optimization method,
+# Comments, Any attributes. Together they must fit the page width minus margins.
+COLUMN_WIDTHS = [0.9, 3.2, 3.0, 5.5, 1.0, 2.6, 5.4, 2.4, 2.4, 3.0, 6.0, 4.4]
 
 
 def build_print_ods(rows, out_path):
@@ -135,8 +125,8 @@ def build_print_ods(rows, out_path):
 
 
 def main():
-    rows = read_sheet(SOURCE_ODS, SHEET_NAME)
-    print(f"read {len(rows) - 1} data rows from {SHEET_NAME!r}")
+    rows = public_rows(SOURCE_ODS)
+    print(f"read {len(rows) - 1} included rows from {SHEET_NAME!r}")
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_ods = os.path.join(tmp, "print_tmp.ods")
