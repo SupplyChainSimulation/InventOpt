@@ -1,25 +1,25 @@
-Supply chain problem (CSV 10-category vocabulary),,
-Category,Papers,Percent of 112 papers
-Inventory Analysis and Optimization,37,33.0
-"Resilience Modeling, Risk Estimation and Mitigation",33,29.5
-Other,28,25.0
-Logistics Optimization and Route Planning,14,12.5
-Energy and Carbon Cost Modeling and Optimization,7,6.2
-Supply Chain Design,7,6.2
-Warehouse Operations Optimization,7,6.2
-Demand Forecasting,6,5.4
-"Planning, production planning",4,3.6
-Supply Chain Disruptions,1,0.9
-Total assignments,144,128.6
+Supply chain problem (CSV vocabulary),,
+Category,Papers,Percent of 198 papers
+Inventory Analysis and Optimization,69,34.8
+"Resilience Modeling, Risk Estimation and Mitigation",53,26.8
+Logistics Optimization and Route Planning,41,20.7
+"Planning, production planning",27,13.6
+Warehouse Operations Optimization,27,13.6
+Other,16,8.1
+Energy and Carbon Cost Modeling and Optimization,13,6.6
+Supply Chain Design,13,6.6
+Demand Forecasting,7,3.5
+Supply Chain Disruptions,1,0.5
+Total assignments,267,134.8
 ,,
-Supply chain problem (8-category scheme),,
-Category,Papers,Percent of 112 papers
-Inventory analysis and optimization,37,33.0
-"Resilience modeling, risk estimation, and mitigation",34,30.4
-Others,28,25.0
-Logistics optimization and route planning,14,12.5
-"Planning and design (analysis, optimization)",11,9.8
-Warehouse operations,7,6.2
-Energy and carbon cost modeling and optimization,7,6.2
-Demand forecasting,6,5.4
-Total assignments,144,128.6
+Supply chain problem (Table 3 scheme),,
+Category,Papers,Percent of 198 papers
+Inventory analysis and optimization,69,34.8
+"Resilience modeling, risk estimation, and mitigation",54,27.3
+Logistics optimization and route planning,41,20.7
+"Planning and design (analysis, optimization)",40,20.2
+Warehouse operations,27,13.6
+Others,16,8.1
+Energy and carbon cost modeling and optimization,13,6.6
+Demand forecasting,7,3.5
+Total assignments,267,134.8

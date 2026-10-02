@@ -1,9 +1,10 @@
 """Write review/Reviewed papers categorization.csv from the 'Categorization (merged)' sheet of Review.ods.
 
 Only rows whose Included column is "yes" are written; the rejected rows stay in
-Review.ods, highlighted, as the record of the screening. Rows are renumbered 1..N
-in sheet order. The Link and Included columns are working columns and are not
-published.
+Review.ods, highlighted, as the record of the screening. Rows are sorted by their
+first supply chain problem (alphabetical, 'Other' last), then year, then title,
+and renumbered 1..N; Review.ods keeps its working order. The Link and Included
+columns are working columns and are not published.
 
 Usage (from the repo root):
     python generate_review_csv.py
@@ -75,15 +76,23 @@ def public_rows(path=SOURCE_ODS):
     if missing:
         sys.exit(f"Columns missing from {SHEET_NAME!r}: {missing}")
     idx = {c: header.index(c) for c in header if c}
-    out = [PUBLIC_COLUMNS]
+    kept = []
     for cells in rows[1:]:
         cells = cells + [""] * (len(header) - len(cells))
-        if cells[idx["Included"]].strip().lower() != "yes":
-            continue
-        values = [cells[idx[c]] for c in PUBLIC_COLUMNS]
-        values[0] = str(len(out))
-        out.append(values)
-    return out
+        if cells[idx["Included"]].strip().lower() == "yes":
+            kept.append([cells[idx[c]] for c in PUBLIC_COLUMNS])
+    kept.sort(key=sort_key)
+    for n, values in enumerate(kept, start=1):
+        values[0] = str(n)
+    return [PUBLIC_COLUMNS] + kept
+
+
+def sort_key(values):
+    """Group by the first supply chain problem (alphabetical, 'Other' last), then year, then title."""
+    problem = values[PUBLIC_COLUMNS.index("Supply chain problem")].split(";")[0].strip()
+    year = values[PUBLIC_COLUMNS.index("Year")]
+    title = values[PUBLIC_COLUMNS.index("Title")]
+    return (problem == "Other", problem.lower(), int(year) if year.isdigit() else 0, title.lower())
 
 
 def main():

@@ -1,21 +1,33 @@
 Category,Papers,Percent
-Not specified,33,29.5
-AnyLogic,32,28.6
-Arena,15,13.4
-Simio,8,7.1
-Python,5,4.5
-Vensim,3,2.7
-MATLAB,2,1.8
-NetLogo,2,1.8
-SAS Simulation Studio,2,1.8
-AnyLogistix,1,0.9
-AutoSched,1,0.9
-FlexSim,1,0.9
-Java,1,0.9
-PySP and Gurobi,1,0.9
-Repast,1,0.9
-SimChain,1,0.9
-SimPy,1,0.9
-Stella Architect,1,0.9
-SuperDecisions,1,0.9
-TOTAL,112,100.0
+Not specified,52,26.3
+AnyLogic,46,23.2
+Arena,19,9.6
+Python,15,7.6
+Simio,10,5.1
+Vensim,7,3.5
+Plant Simulation,6,3.0
+FlexSim,6,3.0
+SimPy,5,2.5
+MATLAB,4,2.0
+AnyLogistix,4,2.0
+NetLogo,3,1.5
+SAS Simulation Studio,2,1.0
+Java,2,1.0
+R,1,0.5
+SAS,1,0.5
+SimChain,1,0.5
+ProModel,1,0.5
+Excel,1,0.5
+Witness Horizon,1,0.5
+FACTS Analyzer,1,0.5
+@RISK,1,0.5
+Stella Architect,1,0.5
+Mesa,1,0.5
+Process Simulator,1,0.5
+MASON,1,0.5
+Repast,1,0.5
+Simul8,1,0.5
+O2DES.Net,1,0.5
+AutoSched,1,0.5
+pydsol,1,0.5
+TOTAL,198,100.0
