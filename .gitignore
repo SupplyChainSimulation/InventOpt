@@ -17,3 +17,6 @@ __pycache__/
 *.xlsx
 .~lock.*
 *.pdf
+
+# vscode
+.vscode/
