@@ -6,24 +6,33 @@ Sr,Attribute/Feature,Description
 4,Location,"Geographic location (latitude, longitude) of the node"
 5,Inventory,Whether the node has inventory storage capability
 6,Inventory Type,"Type of inventory (e.g., finished goods, raw materials)"
-7,Inventory Replenishment Policy,"Replenishment policy (e.g., periodic, EOQ)"
-8,Inventory Capacity,Maximum inventory level that can be stored
-9,Inventory Reorder Level,Threshold to trigger replenishment
-10,Inventory Order-up-to Level,Target level to which inventory is raised when a replenishment order is placed
-11,Inventory Safety Stock,Buffer stock held to absorb demand and lead time variability
-12,Inventory Holding Cost(s),Cost incurred per unit for holding inventory
-13,Storage Cost,"Cost of operating the storage facility, such as refrigerated storage in cold chains"
-14,Inventory Reorder Period,Time interval for placing replenishment orders
-15,Inventory Product(s),List of products that are stored in the inventory
-16,Order Cost,Cost incurred per order placed to the supplier to replenish the inventory
-17,Production Cost,Cost to produce a unit/batch of product (node-specific attribute)
-18,Establishment Cost,Cost of setting up the node (building the production plant or warehouse)
-19,Depreciation Cost,"Decrease in product value over time due to wear, tear, or unfavorable market conditions"
-20,Backorder Penalty,Penalty cost for delayed orders
-21,Probability of Node Failure,"Probability of this node being unavailable due to power outage, equipment breakdown, or labour disruption"
-22,Disruption Duration,Time for which the node remains unavailable after a disruption
-23,Recovery Duration,Time taken by the node to resume normal operation after a disruption
-24,Disruption Cost,"Cost incurred per disruption at this node, including the cost of recovery"
+7,Inventory Product(s),List of products that are stored in the inventory
+8,Shelf Life,Time for which a perishable product stays usable at the node before it expires
+9,Inventory Replenishment Policy,"Replenishment policy (e.g., periodic, EOQ)"
+10,Inventory Capacity,Maximum inventory level that can be stored
+11,Inventory Position,"Inventory on hand plus inventory on order or in transit, minus backlog, tracked during the simulation and compared with the reorder level by reorder-point policies"
+12,Inventory Reorder Level,Threshold to trigger replenishment
+13,Inventory Order-up-to Level,Target level to which inventory is raised when a replenishment order is placed
+14,Order Quantity or Lot Size,Quantity ordered or produced per replenishment order or production run
+15,Inventory Safety Stock,Buffer stock held to absorb demand and lead time variability
+16,Inventory Reorder Period,Time interval for placing replenishment orders
+17,Demand Forecast or Forecast Error,"Forecast of the demand the node faces, with its error or bias, used to set orders and plans"
+18,Inventory Holding Cost(s),Cost incurred per unit for holding inventory
+19,Storage Cost,"Cost of operating the storage facility, such as refrigerated storage in cold chains"
+20,Order Cost,Cost incurred per order placed to the supplier to replenish the inventory
+21,Backorder Penalty,Penalty cost for delayed orders
+22,Depreciation Cost,"Decrease in product value over time due to wear, tear, or unfavorable market conditions"
+23,Establishment Cost,Cost of setting up the node (building the production plant or warehouse)
+24,Selling Price,"Price at which the node sells a unit of product, including markdowns"
+25,Probability of Node Failure,"Probability of this node being unavailable due to power outage, equipment breakdown, or labour disruption"
+26,Disruption Duration,Time for which the node remains unavailable after a disruption
+27,Recovery Duration,Time taken by the node to resume normal operation after a disruption
+28,Disruption Cost,"Cost incurred per disruption at this node, including the cost of recovery"
+29,Number of Backup Sources,Number of alternative suppliers or supply regions the node can draw on when its main source fails
+30,Production Cost,Cost to produce a unit/batch of product (node-specific attribute: production nodes)
+31,Production Capacity,Maximum quantity the node can produce per unit of time (node-specific attribute: production nodes)
+32,Vehicle Arrival Rate,"Rate at which trucks, trains, or vessels arrive at the node (node-specific attribute: ports and terminals)"
+33,Processing or Service Time,"Time to process, handle, load, or unload a unit or vehicle at the node (node-specific attribute: production and handling nodes)"
 ,,
 ,Supply Chain Node Performance Measures,
 Sr,Performance Measure,Description
@@ -51,3 +60,6 @@ Sr,Performance Measure,Description
 22,Node Resilience,Node's ability to recover from disruption
 23,Node Criticality,"Refers to the importance of the node (e.g., a node that could cut the main flow of product if it is down)"
 24,Inventory Shortfall,Shortage amount (unmet demand quantity)
+25,Backlog,"Quantity of accepted orders not yet fulfilled, carried over and filled later rather than lost"
+26,Waiting/Turnaround Time,"Time that vehicles, containers, or orders spend waiting or being handled at the node, such as dwell or turnaround time"
+27,Resource Utilization,"Share of time that equipment, vehicles, or staff at the node are busy"

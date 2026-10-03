@@ -10,11 +10,10 @@ FlexSim,6,3.0
 SimPy,5,2.5
 MATLAB,4,2.0
 AnyLogistix,4,2.0
+SAS Simulation Studio,3,1.5
 NetLogo,3,1.5
-SAS Simulation Studio,2,1.0
 Java,2,1.0
 R,1,0.5
-SAS,1,0.5
 SimChain,1,0.5
 ProModel,1,0.5
 Excel,1,0.5

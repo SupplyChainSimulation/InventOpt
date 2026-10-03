@@ -40,16 +40,16 @@ PROBLEM_SCHEME = {
 
 # Table 2 rows. Healthcare and Medical splits into drugs (pharmaceutical products,
 # including cell and gene therapies and biomanufacturing) and everything else in
-# healthcare (cold chains, blood, PPE, hospital supply, medical devices).
+# healthcare (blood, PPE, hospital supply, medical devices).
 DOMAIN_SCHEME = {
-    "Agriculture and Food": "Agricultural produce and food",
-    "Industrial and Manufacturing": "Industrial and manufacturing",
-    "Humanitarian and Emergency": "Humanitarian and emergency",
-    "Information and Communication Technology (ICT)": "Information and communication technology",
-    "Other/Not mentioned": "Others and not mentioned",
+    "Agriculture and Food": "Agriculture and food",
+    "Industrial and Manufacturing": "Manufacturing and industry",
+    "Humanitarian and Emergency": "Humanitarian and emergency response",
+    "Information and Communication Technology (ICT)": "Electronics and ICT products",
+    "Other/Not mentioned": "Other or not specified",
 }
-COLD_CHAIN = "Cold chains in healthcare and medicine"
-PHARMA = "Pharmaceutical products and medicine"
+HEALTHCARE = "Healthcare and medical supplies"
+PHARMA = "Pharmaceuticals"
 PHARMA_TITLES = [
     "Improving Simulation Optimization Run Time When Solving for Periodic Review Inventory Policies in a Pharmacy",
     "Effects of Timing of Agents' Reactions in Pharmaceutical Supply Chains under Disruption",
@@ -65,6 +65,8 @@ PHARMA_TITLES = [
 # Tool: the package or library the simulation model is built in. Secondary tools
 # (optimisers, learning libraries, process simulators feeding parameters) are dropped.
 SIM_LIBRARIES = ("SimPy", "Mesa", "pydsol")
+# Names that refer to the same tool are counted under one label.
+TOOL_ALIASES = {"SAS": "SAS Simulation Studio"}
 
 
 def norm(text):
@@ -82,7 +84,8 @@ def tool_of(value):
         if re.search(rf"\b{lib}\b", value) and not value.startswith(("Vensim", "AnyLogic")):
             return lib
     first = re.sub(r"\([^)]*\)", "", value).split(";")[0].strip()
-    return re.sub(r"^Python\s+[\d.]+$", "Python", first)
+    first = re.sub(r"^Python\s+[\d.]+$", "Python", first)
+    return TOOL_ALIASES.get(first, first)
 
 
 def split(value):
@@ -99,7 +102,7 @@ def table2(rows):
         cats = set()
         for d in split(r["Application domain"]):
             if d == "Healthcare and Medical":
-                cats.add(PHARMA if norm(r["Title"])[:50] in PHARMA_KEYS else COLD_CHAIN)
+                cats.add(PHARMA if any(norm(r["Title"]).startswith(k) for k in PHARMA_KEYS) else HEALTHCARE)
             else:
                 cats.add(DOMAIN_SCHEME[d])
         out.append(cats)
@@ -142,7 +145,7 @@ def main():
 
     domains = Counter(d for r in rows for d in split(r["Application domain"]))
     scheme2 = Counter(c for cats in table2(rows) for c in cats)
-    order2 = [COLD_CHAIN, PHARMA] + list(DOMAIN_SCHEME.values())
+    order2 = [HEALTHCARE, PHARMA] + list(DOMAIN_SCHEME.values())
     write("review_domains_counts.csv",
           block("Application domain (CSV vocabulary)", domains, n) + [["", "", ""]]
           + block("Application domain (Table 2 scheme)", scheme2, n, [k for k in order2 if scheme2[k]]))

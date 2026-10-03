@@ -26,7 +26,7 @@ Authors model 3 echelon SC to study impact of info sharing and risk pooling",Any
 demand and order quantity
 inventory replenishment policy (order-up-to level, safety stock, moving average forecast)
 Lead time"
-3,Demand Forecasting; Supply Chain Disruptions,Other/Not mentioned,"State of the art, conceptual framework and simulation analysis of the ripple effect on supply chains.",2022,International Journal of Production Research (IJPR),Supply chain disruptions,Python,ABS,Analysis,"The paper tackles the fragmented state of knowledge on the ripple effect: how disruptions spread through supply chains, which mitigation and recovery measures exist, and where empirical and methodological gaps remain.
+3,"Demand Forecasting; Resilience Modeling, Risk Estimation and Mitigation",Other/Not mentioned,"State of the art, conceptual framework and simulation analysis of the ripple effect on supply chains.",2022,International Journal of Production Research (IJPR),Supply chain disruptions,Python,ABS,Analysis,"The paper tackles the fragmented state of knowledge on the ripple effect: how disruptions spread through supply chains, which mitigation and recovery measures exist, and where empirical and methodological gaps remain.
 
 They performed a systematic literature review (50 selected documents) to classify research streams, methods, application areas and mitigation strategies.
 From the review they proposed a conceptual framework that links disruption drivers, resilience pillars (redundancy, robustness, flexibility), digital technologies, and proactive/reactive measures.
