@@ -7,7 +7,7 @@ This folder contains artifacts from two literature reviews that are part of a ma
 - Which simulation methods are used to model these aspects?
 - Which tools and frameworks are available for building supply chain simulation models?
 
-The reviews draw on 198 papers published between 2019 and September 2026 in the simulation modeling and operations research domains, selected from leading conferences and journals. A paper is included when it models a supply chain or a facility in its supply chain role, simulates the system over time or under uncertainty, uses the simulation as a primary instrument of the analysis, and describes the model in enough detail to record its components, parameters, and performance metrics. 104 papers come from the Winter Simulation Conference (WSC), 49 from IJPR, 26 from the *Journal of Simulation* (JoS), and 17 from *Simulation Modelling Practice and Theory* (SIMPAT). The remaining two are from *ACM Transactions on Modeling and Computer Simulation* (TOMACS) and the International Conference on Management Science and Industrial Engineering (MSIE).
+The reviews draw on 197 papers published between 2019 and September 2026 in the simulation modeling and operations research domains, selected from leading conferences and journals. A paper is included when it models a supply chain or a facility in its supply chain role, simulates the system over time or under uncertainty, uses the simulation as a primary instrument of the analysis, and describes the model in enough detail to record its components, parameters, and performance metrics. 104 papers come from the Winter Simulation Conference (WSC), 49 from IJPR, 26 from the *Journal of Simulation* (JoS), 17 from *Simulation Modelling Practice and Theory* (SIMPAT), and one from *ACM Transactions on Modeling and Computer Simulation* (TOMACS).
 
 ## Contents
 
@@ -15,7 +15,7 @@ Every artifact is provided as a CSV file for reuse and as a PDF file for reading
 
 | Artifact | Contents |
 | --- | --- |
-| Reviewed papers categorization | 198 publications, 12 columns |
+| Reviewed papers categorization | 197 publications, 12 columns |
 | Node attributes and performance measures | 33 attributes, 27 performance measures |
 | Edge attributes and performance measures | 14 attributes, 7 performance measures |
 | Graph attributes and performance measures | 6 attributes, 22 performance measures |
