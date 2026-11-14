@@ -12,7 +12,6 @@ CLAUDE.md
 
 # sheets
 *.ods
-!Review.ods
 *.ods.bak
 *.xls
 *.xlsx
@@ -21,3 +20,9 @@ CLAUDE.md
 
 # vscode
 .vscode/
+
+# library search: working record, kept local and not published
+review/tools/library_search/
+
+# reads the working spreadsheet (Review.ods), which is not published
+generate_review_csv.py
