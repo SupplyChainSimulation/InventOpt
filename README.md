@@ -7,8 +7,6 @@ This repository contains simulation models, code and results associated with the
 
 [**An Open Tool-set for Simulation, Design-space Exploration and Optimization of Supply Chains and Inventory Problems**](https://https://www.scitepress.org/Papers/2023/121333/121333.pdf)
 
-**Authors:** Tushar Lone, Lekshmi P, Neha Karanjkar
-
 *Proceedings of the 13th International Conference on Simulation and Modeling Methodologies, Technologies and Applications*, July 2023, Rome, Italy
 **(SIMULTECH 2023)**
 
@@ -32,3 +30,7 @@ These modules are designed to be followed sequentially for a comprehensive under
 ## Usage
 
 To effectively utilize the repository for inventory optimization in a supply chain network, users are encouraged to progress through the modules in the order listed. The Python project demonstrates how to optimize inventory levels across a five-node supply chain network to maximize overall net profit. Initially, a simulation model is constructed and validated. Subsequent steps involve a comparative study of optimization approaches, sampling design points in the input space to find an approximation of the optimum value, and finally, applying Metamodel-based optimization to achieve close-to-optimal results. For a detailed walkthrough, users should refer to the notebook files within each module, which elucidate the step-by-step meta-model-based optimization process.
+
+## Authors
+
+Tushar Lone, Lekshmi P, Neha Karanjkar
