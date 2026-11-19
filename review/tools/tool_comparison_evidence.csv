@@ -1,0 +1,122 @@
+tool,group,criterion,value,evidence,source_url,access_date
+AnyLogic,Commercial,license,Proprietary,Commercial licence; free Personal Learning Edition,https://www.anylogic.com/,2026-10-27
+AnyLogic,Commercial,methods,"DES, ABS, SD",Vendor documents discrete-event; agent-based and system dynamics modeling in one model,https://www.anylogic.com/features/,2026-10-27
+AnyLogic,Commercial,sc_components,No,Libraries are process modeling; material handling; road traffic; rail; pedestrian; fluid. SC components are in anyLogistix,https://anylogic.help/,2026-10-27
+AnyLogic,Commercial,documentation,Full,Help site with user guide and API reference (Javadoc),https://anylogic.help/,2026-10-27
+AnyLogic,Commercial,latest_release,8.9.10 (24 Sep 2026),Release notes on the help site as returned by web search; 8.9.9 on 18 Jun 2026,https://anylogic.help/anylogic/introduction/release-notes.html,2026-10-27
+AnyLogic,Commercial,programmatic,Scripting,Graphical model building extended in Java,https://anylogic.help/,2026-10-27
+AnyLogic,Commercial,gis,Yes,GIS map element with geographic coordinates,https://anylogic.help/,2026-10-27
+AnyLogic,Commercial,gui,Yes,Graphical model editor,https://www.anylogic.com/,2026-10-27
+Arena,Commercial,license,Proprietary,Commercial licence; free student edition,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,methods,"DES, ABS","Rockwell product page (as returned by web search): discrete event for most work, also covers flow and agent-based modeling; no system dynamics",https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,sc_components,No,Generic process and resource modules,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,documentation,Full,Help system and user guides installed with the product,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,latest_release,17.00.01 (by 16 Jul 2026),Rockwell Product Compatibility and Download Center lists 17.00.01 as the latest version with no date; CISA ICSA-26-197-01 (16 Jul 2026) names V17.00.01 as the fix for Arena <=V17.00.00,https://compatibility.rockwellautomation.com/Pages/MultiProductFindDownloads.aspx?crumb=112&mode=3&refSoft=1&versions=65330,2026-10-27
+Arena,Commercial,programmatic,Scripting,VBA and the Arena object model,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,gis,No,No native GIS; no vendor page mentions GIS or maps,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Arena,Commercial,gui,Yes,Graphical flowchart modules,https://www.rockwellautomation.com/en-us/products/software/arena-simulation.html,2026-10-27
+Simio,Commercial,license,Proprietary,Commercial licence; academic edition,https://www.simio.com/,2026-10-27
+Simio,Commercial,methods,"DES, ABS",Object-based modeling with discrete-event and agent-based features,https://www.simio.com/,2026-10-27
+Simio,Commercial,sc_components,No,Generic Standard Library objects (Source; Server; Sink; Vehicle; Worker),https://www.simio.com/,2026-10-27
+Simio,Commercial,documentation,Full,Help with reference for every object; release notes,https://www.simio.com/,2026-10-27
+Simio,Commercial,latest_release,Release 20 Sprint 297 (21 Oct 2026),Release notes PDF lists Sprint 297 dated 21 Oct 2026,https://cdn.simio.com/software/SimioReleaseNotes297.pdf,2026-10-27
+Simio,Commercial,programmatic,Scripting,C# API; Python integration added in Sprint 280 (Nov 2025),https://cdn.simio.com/software/SimioReleaseNotes297.pdf,2026-10-27
+Simio,Commercial,gis,Yes,Release notes describe tables on ArcGIS roadways with the ArcGIS World Street Map enabled,https://cdn.simio.com/software/SimioReleaseNotes297.pdf,2026-10-27
+Simio,Commercial,gui,Yes,Graphical model building,https://www.simio.com/,2026-10-27
+Vensim,Commercial,license,Proprietary,Commercial licence; free PLE,https://vensim.com/,2026-10-27
+Vensim,Commercial,methods,SD,Stock and flow models,https://vensim.com/,2026-10-27
+Vensim,Commercial,sc_components,No,Generic stocks; flows; variables,https://vensim.com/,2026-10-27
+Vensim,Commercial,documentation,Full,Online user guide and function reference,https://www.vensim.com/documentation/,2026-10-27
+Vensim,Commercial,latest_release,10.5 (June 2026),News post Vensim/Ventity news June 2026 announces 10.5,https://vensim.com/2026/06/vensim-ventity-news-june-2026/,2026-10-27
+Vensim,Commercial,programmatic,Scripting,Command scripts and Venapps; DLL in DSS edition,https://www.vensim.com/documentation/,2026-10-27
+Vensim,Commercial,gis,No,No map-based input or output documented,https://www.vensim.com/documentation/,2026-10-27
+Vensim,Commercial,gui,Yes,Graphical stock and flow editor,https://vensim.com/,2026-10-27
+Plant Simulation,Commercial,license,Proprietary,Commercial licence; student version,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+Plant Simulation,Commercial,methods,DES,Discrete-event material flow simulation,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+Plant Simulation,Commercial,sc_components,No,Generic material flow objects,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+Plant Simulation,Commercial,documentation,Full,Online help with SimTalk reference,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+Plant Simulation,Commercial,latest_release,2606 (June 2026),Siemens blog: Discover what's new in Plant Simulation 2606,https://blogs.sw.siemens.com/tecnomatix/discover-whats-new-in-plant-simulation-2606/,2026-10-27
+Plant Simulation,Commercial,programmatic,Scripting,SimTalk,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+Plant Simulation,Commercial,gis,No,No native GIS support,,2026-10-27
+Plant Simulation,Commercial,gui,Yes,Graphical 2D/3D model building,https://plm.sw.siemens.com/en-US/tecnomatix/plant-simulation-software/,2026-10-27
+anyLogistix,Commercial,license,Proprietary,Commercial licence; free PLE,https://www.anylogistix.com/,2026-10-27
+anyLogistix,Commercial,methods,"DES, ABS",Developed by The AnyLogic Company on the AnyLogic engine; no anyLogistix help page found that names the methods,https://www.anylogistix.help/,2026-10-27
+anyLogistix,Commercial,sc_components,Yes,Customers; Distribution Centers; factories; suppliers; inventory and sourcing policies,https://www.anylogistix.com/,2026-10-27
+anyLogistix,Commercial,documentation,Full,Help site with user guide and reference,https://www.anylogistix.help/,2026-10-27
+anyLogistix,Commercial,latest_release,3.4.4 (2026; blog 10 Aug 2026),Release notes top entry 3.4.3 on 31 Mar 2026; blog of 10 Aug 2026 covers 3.4.3 and 3.4.4,https://www.anylogistix.help/notes/release-notes.html,2026-10-27
+anyLogistix,Commercial,programmatic,Scripting,Custom policies through AnyLogic,https://www.anylogistix.help/,2026-10-27
+anyLogistix,Commercial,gis,Yes,Networks placed on a map with geographic locations,https://www.anylogistix.com/,2026-10-27
+anyLogistix,Commercial,gui,Yes,Graphical network and scenario editor,https://www.anylogistix.com/,2026-10-27
+SimPy,General-purpose open-source,license,MIT,PyPI license field,https://pypi.org/project/simpy/,2026-10-27
+SimPy,General-purpose open-source,methods,DES,Process-based discrete-event simulation,https://simpy.readthedocs.io/,2026-10-27
+SimPy,General-purpose open-source,sc_components,No,Generic processes; resources; containers; stores,https://simpy.readthedocs.io/,2026-10-27
+SimPy,General-purpose open-source,documentation,Full,Guides; examples; API reference,https://simpy.readthedocs.io/,2026-10-27
+SimPy,General-purpose open-source,latest_release,4.1.2 (24 May 2026),PyPI upload 2026-05-24; last commit on master 2026-05-23 (GitLab),https://pypi.org/project/simpy/,2026-10-27
+SimPy,General-purpose open-source,programmatic,Yes,Python,https://simpy.readthedocs.io/,2026-10-27
+SimPy,General-purpose open-source,gis,No,,https://simpy.readthedocs.io/,2026-10-27
+SimPy,General-purpose open-source,gui,No,,https://simpy.readthedocs.io/,2026-10-27
+Mesa,General-purpose open-source,license,Apache-2.0,GitHub license,https://github.com/mesa/mesa,2026-10-27
+Mesa,General-purpose open-source,methods,"ABS, DES",Agent-based framework; Mesa 3 adds discrete-event scheduling (ter Hoeven et al. 2025),https://mesa.readthedocs.io/,2026-10-27
+Mesa,General-purpose open-source,sc_components,No,Generic agents; spaces,https://mesa.readthedocs.io/,2026-10-27
+Mesa,General-purpose open-source,documentation,Full,Tutorials; guides; API reference,https://mesa.readthedocs.io/,2026-10-27
+Mesa,General-purpose open-source,latest_release,3.5.1 (15 Mar 2026),PyPI upload 2026-03-15; last commit on main 2026-10-26,https://pypi.org/project/mesa/,2026-10-27
+Mesa,General-purpose open-source,programmatic,Yes,Python,https://mesa.readthedocs.io/,2026-10-27
+Mesa,General-purpose open-source,gis,Yes (Mesa-Geo),"GIS support in Mesa-Geo, developed by the Mesa team: repository in the mesa GitHub organization, PyPI author Mesa Team, 0.9.3; paper Wang, Hess and Crooks 2022, doi 10.1145/3557989.3566157",https://github.com/mesa/mesa-geo,2026-10-27
+Mesa,General-purpose open-source,gui,No,Browser visualization of output only (T3 rule),https://mesa.readthedocs.io/,2026-10-27
+salabim,General-purpose open-source,license,MIT,PyPI classifier MIT,https://pypi.org/project/salabim/,2026-10-27
+salabim,General-purpose open-source,methods,DES,Process-based discrete-event simulation (van der Ham 2018),https://www.salabim.org/manual/,2026-10-27
+salabim,General-purpose open-source,sc_components,No,Generic components; queues; resources; stores,https://www.salabim.org/manual/,2026-10-27
+salabim,General-purpose open-source,documentation,Full,Manual and reference,https://www.salabim.org/manual/,2026-10-27
+salabim,General-purpose open-source,latest_release,26.0.8 (24 Jun 2026),PyPI upload 2026-06-24; last commit on master 2026-05-29,https://pypi.org/project/salabim/,2026-10-27
+salabim,General-purpose open-source,programmatic,Yes,Python,https://www.salabim.org/manual/,2026-10-27
+salabim,General-purpose open-source,gis,No,,https://www.salabim.org/manual/,2026-10-27
+salabim,General-purpose open-source,gui,No,2D/3D animation of output only (T3 rule),https://www.salabim.org/manual/,2026-10-27
+Ciw,General-purpose open-source,license,MIT,GitHub license,https://github.com/CiwPython/Ciw,2026-10-27
+Ciw,General-purpose open-source,methods,DES,Discrete-event simulation of queueing networks (Palmer et al. 2019),https://ciw.readthedocs.io/,2026-10-27
+Ciw,General-purpose open-source,sc_components,No,Generic queueing nodes; arrival and service distributions,https://ciw.readthedocs.io/,2026-10-27
+Ciw,General-purpose open-source,documentation,Full,Tutorials; guides; reference,https://ciw.readthedocs.io/,2026-10-27
+Ciw,General-purpose open-source,latest_release,3.2.7 (5 Dec 2025),PyPI upload 2025-12-05; last commit on master 2025-12-05,https://pypi.org/project/ciw/,2026-10-27
+Ciw,General-purpose open-source,programmatic,Yes,Python,https://ciw.readthedocs.io/,2026-10-27
+Ciw,General-purpose open-source,gis,No,,https://ciw.readthedocs.io/,2026-10-27
+Ciw,General-purpose open-source,gui,No,,https://ciw.readthedocs.io/,2026-10-27
+miniSCOT,SC-specific open-source,license,Apache-2.0,GitHub license,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,methods,Time-stepped,"Not clearly mentioned in the documentation; went through the related files and found that the controller advances a clock by a fixed daily or hourly increment (src/scse/controller/miniscot.py); cli.py and notebook_interface.py loop over the same integer clock; no event list or DES library in the repository;
+",https://github.com/amzn/supply-chain-simulation-environment/blob/main/src/scse/controller/miniscot.py,2026-10-27
+miniSCOT,SC-specific open-source,sc_components,Yes,Modules for vendors; customers; buying; fulfillment; topology,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,documentation,Limited,README only; its documentation link reads TODO,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,latest_release,No release; last commit 22 Jun 2021,No tags or releases; not on PyPI; clone and install; www.miniscot.com does not resolve (C-9),https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,programmatic,Yes,Python,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,gis,No,,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+miniSCOT,SC-specific open-source,gui,No,,https://github.com/amzn/supply-chain-simulation-environment,2026-10-27
+supplychainpy,SC-specific open-source,license,BSD-3-Clause,GitHub license,https://github.com/KevinFasusi/supplychainpy,2026-10-27
+supplychainpy,SC-specific open-source,methods,Monte Carlo,Monte Carlo simulation of inventory,https://supplychainpy.readthedocs.io/,2026-10-27
+supplychainpy,SC-specific open-source,sc_components,Yes,Inventory analysis and reorder levels,https://supplychainpy.readthedocs.io/,2026-10-27
+supplychainpy,SC-specific open-source,documentation,Full,Read the Docs site,https://supplychainpy.readthedocs.io/,2026-10-27
+supplychainpy,SC-specific open-source,latest_release,0.0.5 (8 Nov 2017),PyPI upload 2017-11-08; last commit 2017-11-08. Repository is KevinFasusi/supplychainpy;,https://pypi.org/project/supplychainpy/,2026-10-27
+supplychainpy,SC-specific open-source,programmatic,Yes,Python,https://github.com/KevinFasusi/supplychainpy,2026-10-27
+supplychainpy,SC-specific open-source,gis,No,,https://github.com/KevinFasusi/supplychainpy,2026-10-27
+supplychainpy,SC-specific open-source,gui,No,,https://github.com/KevinFasusi/supplychainpy,2026-10-27
+Stockpyl,SC-specific open-source,license,MIT,GitHub license,https://github.com/LarrySnyder/stockpyl,2026-10-27
+Stockpyl,SC-specific open-source,methods,Time-stepped,Periodic-review simulation of inventory networks,https://stockpyl.readthedocs.io/,2026-10-27
+Stockpyl,SC-specific open-source,sc_components,Yes,Network nodes; inventory policies,https://stockpyl.readthedocs.io/,2026-10-27
+Stockpyl,SC-specific open-source,documentation,Full,Tutorials and API reference,https://stockpyl.readthedocs.io/,2026-10-27
+Stockpyl,SC-specific open-source,latest_release,1.0.2 (2 May 2025),PyPI upload 2025-05-02; last commit on main 2026-06-10,https://pypi.org/project/stockpyl/,2026-10-27
+Stockpyl,SC-specific open-source,programmatic,Yes,Python,https://stockpyl.readthedocs.io/,2026-10-27
+Stockpyl,SC-specific open-source,gis,No,,https://stockpyl.readthedocs.io/,2026-10-27
+Stockpyl,SC-specific open-source,gui,No,,https://stockpyl.readthedocs.io/,2026-10-27
+OR-Gym,SC-specific open-source,license,MIT,GitHub license,https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,methods,Time-stepped,Gym environments stepped one period at a time (Hubbs et al. 2020 arXiv:2008.06319),https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,sc_components,Yes,Multi-echelon inventory and network environments (InvManagement; NetworkManagement),https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,documentation,Limited,README and example notebooks,https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,latest_release,0.5.0 (2 Sep 2022),PyPI upload 2022-09-02; last commit on master 2023-02-13,https://pypi.org/project/or-gym/,2026-10-27
+OR-Gym,SC-specific open-source,programmatic,Yes,Python,https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,gis,No,,https://github.com/hubbs5/or-gym,2026-10-27
+OR-Gym,SC-specific open-source,gui,No,,https://github.com/hubbs5/or-gym,2026-10-27
+SupplyNetPy,SC-specific open-source,license,MIT,PyPI license,https://pypi.org/project/supplynetpy/,2026-10-27
+SupplyNetPy,SC-specific open-source,methods,DES,Built on SimPy,https://supplychainsimulation.github.io/SupplyNetPy/,2026-10-27
+SupplyNetPy,SC-specific open-source,sc_components,Yes,Suppliers; manufacturers; distributors; retailers; links; replenishment and selection policies,https://supplychainsimulation.github.io/SupplyNetPy/,2026-10-27
+SupplyNetPy,SC-specific open-source,documentation,Full,User guide; examples; API reference,https://supplychainsimulation.github.io/SupplyNetPy/,2026-10-27
+SupplyNetPy,SC-specific open-source,latest_release,0.5.1 (27 Oct 2026),PyPI upload 2026-10-27; docs release history; tag v0.5.1 on 75a38be,https://pypi.org/project/supplynetpy/,2026-10-27
+SupplyNetPy,SC-specific open-source,programmatic,Yes,Python,https://supplychainsimulation.github.io/SupplyNetPy/,2026-10-27
+SupplyNetPy,SC-specific open-source,gis,No,Known issues and planned work page lists geographic map locations as planned work,https://supplychainsimulation.github.io/SupplyNetPy/known-issues/,2026-10-27
+SupplyNetPy,SC-specific open-source,gui,No,Models are built in Python only; no graphical model builder in the documentation (not listed on the known-issues page),https://supplychainsimulation.github.io/SupplyNetPy/,2026-10-27

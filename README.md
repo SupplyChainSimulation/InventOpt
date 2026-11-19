@@ -16,7 +16,7 @@ This repository contains simulation models, code and results associated with the
 
 This study emphasizes the critical importance of optimizing supply chain (SC) networks to enhance profitability and minimize costs. The traditional analytical methods cannot capture supply chains' complex and stochastic nature, such as demand variability and lead times. Simulation-based Optimization (SBO) models the intricate dynamics of SC systems. The paper explores the use of Metamodels alongside SBO to improve efficiency by approximating the input-output relationship of simulation models, focusing on the application of Gaussian Process Regression (GPR) and Neural Network (NN) Metamodels with local optimizers for optimization. 
 
-Download it [here](https://github.com/SupplyChainSimulation/InventOpt/blob/main/doc/InventOpt.pdf).
+Read it [here](https://github.com/SupplyChainSimulation/InventOpt/blob/main/doc/InventOpt.pdf).
 
 ## Organization of the repository
 

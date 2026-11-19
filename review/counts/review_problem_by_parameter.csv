@@ -1,0 +1,9 @@
+Cluster,Studies,Demand,Node type,Number of nodes,Inventory,Inventory replenishment policy,Inventory holding cost(s),Shelf life,Production capacity,Processing or service time,Lead time,Fleet composition,Transportation type,Time windows,Emission factor,Node disruption,Disruption duration,Number of backup sources
+Inventory analysis and optimization,65,48,18,8,61,27,25,12,15,10,42,5,2,1,0,9,3,1
+"Resilience modeling, risk estimation, and mitigation",36,26,18,7,22,9,6,1,16,7,19,3,6,0,0,19,8,2
+Logistics optimization and route planning,48,27,33,11,12,4,3,2,16,14,20,28,15,10,2,4,3,1
+"Planning and design (analysis, optimization)",48,33,23,10,31,6,9,2,18,12,24,10,6,1,2,6,1,2
+Warehouse operations,7,5,1,1,3,1,0,1,3,4,1,0,0,0,0,0,0,0
+Energy and carbon cost modeling and optimization,16,11,8,3,8,3,0,2,6,5,6,9,7,2,6,3,0,0
+Demand forecasting,5,4,1,1,5,3,2,0,1,2,1,0,0,0,0,0,0,0
+Others,2,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0

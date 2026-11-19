@@ -1,0 +1,9 @@
+Cluster,Studies,Customer service level,SC cost,Waiting or turnaround time,Inventory levels,Inventory carrying cost,Travel distance or time,Resource utilization,SC net profit,CO2 emissions,Transportation cost,Inventory waste,Shortage,Backlog
+Inventory analysis and optimization,65,18,22,7,21,16,2,5,8,1,6,10,10,5
+"Resilience modeling, risk estimation, and mitigation",36,15,9,11,8,2,2,3,2,1,1,1,1,5
+Logistics optimization and route planning,48,9,11,18,2,4,15,5,2,8,9,2,1,2
+"Planning and design (analysis, optimization)",48,11,17,12,13,4,5,4,7,3,7,2,3,3
+Warehouse operations,7,3,0,3,0,0,0,4,0,0,0,0,0,0
+Energy and carbon cost modeling and optimization,16,2,4,2,1,1,4,2,0,10,2,1,0,0
+Demand forecasting,5,1,2,1,1,1,0,0,0,0,0,0,0,0
+Others,2,1,0,1,0,0,0,0,0,0,1,0,0,0

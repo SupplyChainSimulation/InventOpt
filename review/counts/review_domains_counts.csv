@@ -1,20 +1,23 @@
-Application domain (CSV vocabulary),,
-Category,Papers,Percent of 197 papers
-Other/Not mentioned,77,39.1
-Industrial and Manufacturing,64,32.5
-Agriculture and Food,28,14.2
-Healthcare and Medical,25,12.7
-Humanitarian and Emergency,10,5.1
-Information and Communication Technology (ICT),3,1.5
-Total assignments,207,105.1
+Application domain (sheet vocabulary),,
+Category,Papers,Percent of 167 papers
+Other,43,25.7
+Agriculture and Food,29,17.4
+Not mentioned,28,16.8
+Industrial and Manufacturing,28,16.8
+Information and Communication Technology (ICT),22,13.2
+Healthcare and medical supplies,11,6.6
+Humanitarian and Emergency,10,6.0
+Pharmaceuticals,6,3.6
+Total assignments,177,106.0
 ,,
 Application domain (Table 2 scheme),,
-Category,Papers,Percent of 197 papers
-Healthcare and medical supplies,16,8.1
-Pharmaceuticals,9,4.6
-Agriculture and food,28,14.2
-Manufacturing and industry,64,32.5
-Humanitarian and emergency response,10,5.1
-Electronics and ICT products,3,1.5
-Other or not specified,77,39.1
-Total assignments,207,105.1
+Category,Papers,Percent of 167 papers
+Healthcare and medical supplies,11,6.6
+Pharmaceuticals,6,3.6
+Agriculture and food,29,17.4
+Manufacturing and industry,28,16.8
+Humanitarian and emergency response,10,6.0
+Electronics and ICT products,22,13.2
+Other,43,25.7
+Not mentioned,28,16.8
+Total assignments,177,106.0

@@ -1,20 +1,20 @@
-"""Print the 'Categorization (merged)' sheet of Review.ods to review/Reviewed papers categorization.pdf.
+"""Print review/Reviewed papers categorization.csv to review/Reviewed papers categorization.pdf.
 
-The rows and columns printed are the ones generate_review_csv.py publishes: only
-rows marked Included = yes, renumbered, without the Link and Included columns.
+The CSV holds the included studies in Sr order, and the PDF prints the same
+rows and columns.
 
-Converting Review.ods directly gives a bad printout (the sheet carries stored
-print state that breaks the page every ~2 rows), so this script rebuilds a
-clean single-sheet spreadsheet from the cell values with print-friendly
-formatting, then converts it with LibreOffice headless.
+LibreOffice is given a clean single-sheet spreadsheet built from the cell
+values with print-friendly formatting, which it converts headless. Do not
+convert the coding spreadsheet directly: its stored print state
+breaks the page every ~2 rows.
 
 Usage (from the repo root):
     python generate_review_pdf.py
 
-Requires: odfpy, LibreOffice. Review.ods may be open in LibreOffice while
-this runs, but unsaved changes will not appear in the PDF.
+Requires: odfpy, LibreOffice.
 """
 
+import csv
 import os
 import shutil
 import subprocess
@@ -30,11 +30,9 @@ from odf.table import (Table, TableCell, TableColumn, TableHeaderRows,
                        TableRow)
 from odf.text import P
 
-from generate_review_csv import public_rows
-
 REPO_DIR = os.path.dirname(os.path.abspath(__file__))
-SOURCE_ODS = os.path.join(REPO_DIR, "Review.ods")
-SHEET_NAME = "Categorization (merged)"
+SOURCE_CSV = os.path.join(REPO_DIR, "review", "Reviewed papers categorization.csv")
+SHEET_NAME = "Categorization"
 OUTPUT_PDF = os.path.join(REPO_DIR, "review", "Reviewed papers categorization.pdf")
 SOFFICE = r"C:\Program Files\LibreOffice\program\soffice.exe"
 
@@ -46,8 +44,11 @@ FONT_SIZE = "8pt"
 HEADER_BG = "#B3C6E7"
 # Column widths (cm): Sr, Supply chain problem, Application domain, Title, Year,
 # Venue, Specific aspect, Tools, Simulation method, Optimization method,
-# Comments, Any attributes. Together they must fit the page width minus margins.
-COLUMN_WIDTHS = [0.9, 3.2, 3.0, 5.5, 1.0, 2.6, 5.4, 2.4, 2.4, 3.0, 6.0, 4.4]
+# Comments, Any attributes, then the six reporting columns (Verification reported,
+# Parameter values given, Replications and run length given, Model or code shared,
+# Network type, Number of nodes). Together they must fit the page width minus margins.
+COLUMN_WIDTHS = [0.9, 2.4, 2.0, 3.4, 0.9, 1.8, 3.3, 2.0, 1.8, 2.0, 4.9, 5.4,
+                 1.7, 1.5, 1.9, 1.4, 1.4, 1.3]
 
 
 def build_print_ods(rows, out_path):
@@ -124,9 +125,15 @@ def build_print_ods(rows, out_path):
     doc.save(out_path)
 
 
+def read_rows(path=SOURCE_CSV):
+    """Header plus the study rows of the categorization CSV."""
+    with open(path, encoding="utf-8", newline="") as f:
+        return list(csv.reader(f))
+
+
 def main():
-    rows = public_rows(SOURCE_ODS)
-    print(f"read {len(rows) - 1} included rows from {SHEET_NAME!r}")
+    rows = read_rows()
+    print(f"read {len(rows) - 1} studies from {SOURCE_CSV}")
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_ods = os.path.join(tmp, "print_tmp.ods")

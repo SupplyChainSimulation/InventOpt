@@ -1,0 +1,97 @@
+Level,Kind,Name,Studies,C1 inventory,C2 resilience,C3 logistics,C4 planning and design,C5 warehouse,C6 energy and carbon,C7 demand forecasting,C8 others,Clusters,In table
+Node level,attr,Type,75,18,18,33,23,1,8,1,1,"1, 2, 3, 4, 6",yes
+Node level,attr,Location,24,3,3,14,10,1,4,1,0,"1, 2, 3, 4, 6",yes
+Node level,attr,Inventory,104,61,22,12,31,3,8,5,0,"1, 2, 3, 4, 5, 6, 7",yes
+Node level,attr,Inventory Type,20,7,2,2,16,0,1,1,0,"1, 4",yes
+Node level,attr,Inventory Product(s),55,23,12,7,20,7,4,2,0,"1, 2, 3, 4, 5, 6",yes
+Node level,attr,Shelf Life,17,12,1,2,2,1,2,0,0,1,yes
+Node level,attr,Inventory Replenishment Policy,39,27,9,4,6,1,3,3,0,"1, 2, 3, 4, 6, 7",yes
+Node level,attr,Inventory Capacity,15,10,5,4,2,0,1,1,0,"1, 2, 3",yes
+Node level,attr,Inventory Position,7,6,0,0,3,0,0,0,0,"1, 4",yes
+Node level,attr,Inventory Reorder Level,25,18,5,1,6,0,3,0,0,"1, 2, 4, 6",yes
+Node level,attr,Inventory Order-up-to Level,32,22,9,1,4,0,2,2,0,"1, 2, 4",yes
+Node level,attr,Order Quantity or Lot Size,31,21,5,3,8,0,4,2,0,"1, 2, 3, 4, 6",yes
+Node level,attr,Inventory Safety Stock,23,12,7,2,10,0,2,2,0,"1, 2, 4",yes
+Node level,attr,Target Service Level,6,4,0,0,2,0,1,0,0,1,yes
+Node level,attr,Inventory Reorder Period,15,14,2,0,3,0,0,1,0,"1, 4",yes
+Node level,attr,Planning Horizon,10,6,1,2,6,0,0,1,0,"1, 4",yes
+Node level,attr,Demand Forecast or Forecast Error,29,14,7,1,13,1,0,3,0,"1, 2, 4, 7",yes
+Node level,attr,Inventory Holding Cost(s),32,25,6,3,9,0,0,2,0,"1, 2, 3, 4",yes
+Node level,attr,Storage Cost,0,0,0,0,0,0,0,0,0,,no
+Node level,attr,Order Cost,10,7,4,0,2,0,0,0,0,"1, 2",yes
+Node level,attr,Purchasing Cost,4,3,1,0,1,0,1,0,0,1,yes
+Node level,attr,Backorder Penalty,26,17,5,3,7,1,0,2,0,"1, 2, 3, 4",yes
+Node level,attr,Backorders or Lost Sales,14,7,4,1,6,0,0,0,0,"1, 2, 4",yes
+Node level,attr,Depreciation Cost,8,7,4,2,0,0,0,0,0,"1, 2",yes
+Node level,attr,Establishment Cost,10,1,2,4,6,0,2,0,0,"3, 4",yes
+Node level,attr,Selling Price,21,12,4,4,8,0,0,0,0,"1, 2, 3, 4",yes
+Node level,attr,Node Disruption,25,9,19,4,6,0,3,0,0,"1, 2, 3, 4, 6",yes
+Node level,attr,Disruption Duration,13,3,8,3,1,0,0,0,0,"1, 2, 3",yes
+Node level,attr,Recovery Duration,2,0,1,1,1,0,0,0,0,,no
+Node level,attr,Disruption Cost,4,4,2,0,0,0,0,0,0,1,yes
+Node level,attr,Number of Backup Sources,4,1,2,1,2,0,0,0,0,,yes
+Node level,attr,Production Cost,18,7,4,3,9,0,1,1,0,"1, 2, 3, 4",yes
+Node level,attr,Production Capacity,54,15,16,16,18,3,6,1,1,"1, 2, 3, 4, 5, 6",yes
+Node level,attr,Yield or Defect Rate,8,3,3,0,4,0,1,0,0,"1, 2, 4",yes
+Node level,attr,Vehicle Arrival Rate,5,1,0,2,1,1,1,0,0,,yes
+Node level,attr,Processing or Service Time,40,10,7,14,12,4,5,2,1,"1, 2, 3, 4, 5, 6",yes
+Node level,attr,Production Lead Time,12,6,3,0,8,0,0,2,0,"1, 2, 4",yes
+Node level,attr,Resources,39,10,4,13,11,7,4,2,1,"1, 2, 3, 4, 5, 6",yes
+Node level,attr,Operating Rules,17,5,2,2,3,5,2,0,0,"1, 4, 5",yes
+Node level,attr,Time Windows,10,1,0,10,1,0,2,0,0,3,yes
+Node level,perf,Throughput,9,2,3,3,2,2,1,0,0,"2, 3",yes
+Node level,perf,Total sales/net sales,4,1,1,2,2,0,0,0,0,,yes
+Node level,perf,Net profit,3,0,1,1,1,0,0,0,1,,no
+Node level,perf,Inventory levels,38,21,8,2,13,0,1,1,0,"1, 2, 4",yes
+Node level,perf,Inventory Turnover,2,2,0,0,0,0,0,0,0,,no
+Node level,perf,Demand Placed,2,1,0,1,1,0,1,0,0,,no
+Node level,perf,Demand Received,3,1,2,0,0,0,0,0,0,,no
+Node level,perf,Demand Fulfilled (Sales),10,3,1,4,3,0,0,0,1,"1, 3, 4",yes
+Node level,perf,Customer Service Level,1,1,0,0,0,0,1,0,0,,no
+Node level,perf,Shortage,13,10,1,1,3,0,0,0,0,"1, 4",yes
+Node level,perf,Inventory Waste,13,10,1,2,2,0,1,0,0,1,yes
+Node level,perf,Production Level,6,1,3,1,2,0,0,1,0,2,yes
+Node level,perf,Supply Reliability,4,1,0,2,3,0,1,0,0,4,yes
+Node level,perf,Node Resilience,2,0,2,0,0,0,0,0,0,,no
+Node level,perf,Inventory Shortfall,8,3,2,2,1,0,0,0,1,1,yes
+Node level,perf,Backlog,12,5,5,2,3,0,0,0,0,"1, 2, 4",yes
+Node level,perf,Waiting/Turnaround Time,40,7,11,18,12,3,2,1,1,"1, 2, 3, 4, 5",yes
+Node level,perf,Resource Utilization,17,5,3,5,4,4,2,0,0,"1, 2, 3, 4, 5",yes
+Node level,perf,Internal Travel Distance or Time,3,0,0,0,0,3,0,0,0,5,no
+Link level,attr,Link distance,20,1,4,10,6,0,3,1,1,"2, 3, 4, 6",yes
+Link level,attr,Transportation Type,22,2,6,15,6,0,7,0,0,"2, 3, 4, 6",yes
+Link level,attr,Fleet Composition,39,5,3,28,10,0,9,0,1,"1, 2, 3, 4, 6",yes
+Link level,attr,Maximum Load Capacity,19,7,4,12,4,0,3,0,0,"1, 2, 3, 4, 6",yes
+Link level,attr,Minimum Shipment Quantity,1,0,0,0,0,0,1,0,0,,no
+Link level,attr,Lead Time,87,42,19,20,24,1,6,1,0,"1, 2, 3, 4, 6",yes
+Link level,attr,Product(s),14,2,5,8,3,0,3,0,0,"2, 3, 4, 6",yes
+Link level,attr,Transportation cost,16,7,5,9,4,0,1,0,0,"1, 2, 3, 4",yes
+Link level,attr,Carbon Cost,2,0,0,2,1,0,1,0,0,,no
+Link level,attr,Emission Factor,6,0,0,2,2,0,6,0,0,6,yes
+Link level,attr,Payment Terms,3,1,1,1,0,0,0,0,0,,no
+Link level,attr,Probability of Link Failure,3,1,2,2,1,0,0,0,0,,no
+Link level,perf,CO2 emissions,14,1,1,8,3,0,10,0,0,"3, 4, 6",yes
+Link level,perf,Link utilization,5,0,0,5,1,0,0,0,0,3,yes
+Link level,perf,Total Shipments,11,3,0,7,1,0,1,0,1,"1, 3",yes
+Link level,perf,Travel Distance or Time,19,2,2,15,5,0,4,0,0,"3, 4, 6",yes
+Network level,attr,Number of nodes,31,8,7,11,10,1,3,1,0,"1, 2, 3, 4, 6",yes
+Network level,attr,Number of edges,6,1,2,3,4,0,1,0,0,"3, 4",yes
+Network level,attr,Number of tiers,10,3,3,1,4,1,2,1,0,"1, 2, 4",yes
+Network level,attr,Type of SC,3,1,0,1,2,0,1,0,0,,no
+Network level,attr,Demand,111,48,26,27,33,5,11,4,1,"1, 2, 3, 4, 5, 6, 7",yes
+Network level,attr,Demand Variability,30,13,7,8,9,3,1,2,0,"1, 2, 3, 4, 5",yes
+Network level,perf,Supply chain cost,45,22,9,11,17,0,4,2,0,"1, 2, 3, 4, 6",yes
+Network level,perf,Average SC cost,4,4,0,0,2,0,0,0,0,1,yes
+Network level,perf,Supply chain net profit,15,8,2,2,7,0,0,0,0,"1, 4",yes
+Network level,perf,Customer service level,45,18,15,9,11,3,2,1,1,"1, 2, 3, 4, 5",yes
+Network level,perf,Resilience level,2,1,2,0,1,0,0,0,0,,no
+Network level,perf,Time to recover,4,1,4,0,0,0,0,0,0,2,yes
+Network level,perf,Average cost per item,3,0,0,3,1,0,0,0,0,3,no
+Network level,perf,Inventory carry cost,19,16,2,4,4,0,1,1,0,"1, 3, 4",yes
+Network level,perf,Inventory spend cost,7,7,1,0,0,0,0,0,0,1,yes
+Network level,perf,Backorder or Shortage Cost,11,7,2,0,4,0,1,1,0,"1, 4",yes
+Network level,perf,Transportation cost,14,6,1,9,7,0,2,0,1,"1, 3, 4",yes
+Network level,perf,Revenue,4,2,1,0,2,0,0,0,0,,yes
+Network level,perf,Energy or Fuel Consumption,4,0,0,1,0,1,4,0,0,6,yes
+Network level,perf,Availability,4,3,1,0,1,0,0,0,0,1,yes
+Network level,perf,Bullwhip ratio,5,4,3,0,0,0,0,1,0,"1, 2",yes

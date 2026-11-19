@@ -1,12 +1,12 @@
 Category,Papers,Percent
-DES,89,45.2
-ABS,32,16.2
-Other,21,10.7
-SD,18,9.1
-Monte Carlo,15,7.6
-Hybrid DES + ABS,14,7.1
-Hybrid DES + SD,3,1.5
-Hybrid DES + Monte Carlo,2,1.0
-Hybrid DES + ABS + SD,2,1.0
-Hybrid DES + ABS + Monte Carlo,1,0.5
-TOTAL,197,100.0
+DES,67,40.1
+Other,32,19.2
+ABS,23,13.8
+SD,16,9.6
+Hybrid DES + ABS,13,7.8
+Monte Carlo,9,5.4
+Hybrid DES + ABS + SD,3,1.8
+Hybrid DES + SD,2,1.2
+Hybrid DES + Monte Carlo,1,0.6
+Hybrid SD + Monte Carlo,1,0.6
+TOTAL,167,100.0

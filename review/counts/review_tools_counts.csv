@@ -1,32 +1,34 @@
-Category,Papers,Percent
-Not specified,52,26.4
-AnyLogic,46,23.4
-Arena,18,9.1
-Python,15,7.6
-Simio,10,5.1
-Vensim,7,3.6
-Plant Simulation,6,3.0
-FlexSim,6,3.0
-SimPy,5,2.5
-MATLAB,4,2.0
-AnyLogistix,4,2.0
-SAS Simulation Studio,3,1.5
-NetLogo,3,1.5
-Java,2,1.0
-R,1,0.5
-SimChain,1,0.5
-ProModel,1,0.5
-Excel,1,0.5
-Witness Horizon,1,0.5
-FACTS Analyzer,1,0.5
-@RISK,1,0.5
-Stella Architect,1,0.5
-Mesa,1,0.5
-Process Simulator,1,0.5
-MASON,1,0.5
-Repast,1,0.5
-Simul8,1,0.5
-O2DES.Net,1,0.5
-AutoSched,1,0.5
-pydsol,1,0.5
-TOTAL,197,100.0
+Category,Papers,Percent,Group,SC-specific
+AnyLogic,42,25.1,Commercial simulation software,no
+Not specified,36,21.6,Not specified,no
+Arena,17,10.2,Commercial simulation software,no
+Vensim,8,4.8,Commercial simulation software,no
+Java,7,4.2,"Programming languages, spreadsheets and in-house code",no
+Simio,7,4.2,Commercial simulation software,no
+Python,7,4.2,"Programming languages, spreadsheets and in-house code",no
+Plant Simulation,6,3.6,Commercial simulation software,no
+MATLAB,4,2.4,"Programming languages, spreadsheets and in-house code",no
+SimPy,4,2.4,Open-source simulation libraries and platforms,no
+NetLogo,3,1.8,Open-source simulation libraries and platforms,no
+SAS Simulation Studio,2,1.2,Commercial simulation software,no
+Excel,2,1.2,"Programming languages, spreadsheets and in-house code",no
+anyLogistix,2,1.2,Commercial simulation software,yes
+AutoSched AP,2,1.2,Commercial simulation software,no
+ProModel,2,1.2,Commercial simulation software,no
+PsychSim,1,0.6,Open-source simulation libraries and platforms,no
+C++,1,0.6,"Programming languages, spreadsheets and in-house code",no
+BPSCN library,1,0.6,"Programming languages, spreadsheets and in-house code",yes
+Stella Architect,1,0.6,Commercial simulation software,no
+Repast,1,0.6,Open-source simulation libraries and platforms,no
+MASON,1,0.6,Open-source simulation libraries and platforms,no
+FACTS Analyzer,1,0.6,Commercial simulation software,no
+FlexSim,1,0.6,Commercial simulation software,no
+Simcad Pro,1,0.6,Commercial simulation software,no
+GAMS,1,0.6,"Programming languages, spreadsheets and in-house code",no
+SLAPStack,1,0.6,Open-source simulation libraries and platforms,no
+SIMUL8,1,0.6,Commercial simulation software,no
+Planimate,1,0.6,Commercial simulation software,no
+CPN Tools,1,0.6,Open-source simulation libraries and platforms,no
+R,1,0.6,"Programming languages, spreadsheets and in-house code",no
+ESL,1,0.6,"Programming languages, spreadsheets and in-house code",no
+TOTAL,167,100.0,,

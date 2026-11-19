@@ -1,0 +1,39 @@
+Network type,,
+Category,Papers,Percent of 167 papers
+Real,96,57.5
+Generic,71,42.5
+TOTAL,167,100.0
+,,
+Number of nodes,,
+Category,Papers,Percent of 167 papers
+2 to 10,58,34.7
+1,35,21.0
+more than 50,29,17.4
+11 to 50,28,16.8
+NR,17,10.2
+TOTAL,167,100.0
+,,
+Verification reported,,
+Category,Papers,Percent of 167 papers
+no,117,70.1
+yes,50,29.9
+TOTAL,167,100.0
+,,
+Parameter values given,,
+Category,Papers,Percent of 167 papers
+yes,132,79.0
+no,35,21.0
+TOTAL,167,100.0
+,,
+Replications and run length given,,
+Category,Papers,Percent of 167 papers
+yes,96,57.5
+no,71,42.5
+TOTAL,167,100.0
+,,
+Model or code shared,,
+Category,Papers,Percent of 167 papers
+no,155,92.8
+yes,12,7.2
+TOTAL,167,100.0
+,,
